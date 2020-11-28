@@ -2,9 +2,21 @@
   <div class="search">
     <v-card elevation="0 pt-10">
       <div class="d-flex flex-no-wrap justify-start">
+        <!--
+        <v-row>
+          <v-col cols="12">
+            <img
+            class="triangle_new_withText"
+              src="@/assets/images/triangle_new_withText-01.png"
+              alt="pyramide research interests"
+            />
+          </v-col>
+        </v-row>
+       -->
+
         <v-row>
           <v-col>
-            <v-sheet class="ml-5">
+            <v-sheet class="ml-5 mt-4">
               <div>
                 How to achieve a
                 <strong class="link-1">balanced human-machine symbiosis</strong>
@@ -33,8 +45,8 @@
           </v-col>
           <v-col>
             <img
-              height="200"
-              src="@/assets/images/pyramide_research_interests.png"
+              height="260"
+              src="@/assets/images/triangle_new-01.png"
               alt="pyramide research interests"
             />
           </v-col>
@@ -50,3 +62,8 @@ export default {
   components: {},
 };
 </script>
+<style scoped>
+.triangle_new_withText {
+  width: 100%;
+}
+</style>
