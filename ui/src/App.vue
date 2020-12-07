@@ -42,7 +42,7 @@
     <v-main class="grey lighten-3">
       <v-container>
         <v-row>
-          <v-col cols="3 navigation-drawer pa-0">
+          <v-col cols="3" class="navigation-drawer pa-0">
             <v-sheet
               rounded="lg"
               min-height="268"
@@ -167,7 +167,7 @@
             </v-sheet>
           </v-col>
 
-          <v-col class="pa-0">
+          <v-col cols="9" class="pa-0">
             <v-sheet min-height="70vh" rounded="lg">
               <router-view></router-view>
             </v-sheet>
@@ -179,10 +179,15 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+
 export default {
   data: () => ({
     links: ["HOME", "RESEARCH", "WORK WITH ME"],
   }),
+  mounted() {
+    this.$store.dispatch("loadPublications");
+  },
 };
 </script>
 
@@ -281,5 +286,18 @@ body {
 }
 .link-1 {
   color: #c48d3b;
+}
+
+.custom-title {
+  color: #b7a99a;
+  font-weight: 1800;
+}
+.custom-sub-title {
+  color: #b7a99a;
+  font-weight: 1000;
+}
+
+.search-publications {
+  background-color: lightgray;
 }
 </style>
