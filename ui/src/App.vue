@@ -24,7 +24,7 @@
           to="/work-with-me"
           >WORK WITH ME</v-btn
         >
-        <v-spacer></v-spacer>
+        <!--<v-spacer></v-spacer>
         <v-responsive max-width="260">
           <v-text-field
             solo
@@ -35,26 +35,26 @@
             rounded
             color="white"
           ></v-text-field>
-        </v-responsive>
+        </v-responsive>-->
       </v-container>
     </v-app-bar>
 
     <v-main class="grey lighten-3">
       <v-container>
         <v-row>
-          <v-col cols="3" class="navigation-drawer pa-0">
+          <div class="navigation-drawer pa-0 animate__animated"
+          :class="stickySidebar ? 'sticky animate__fadeInUp': 'col col-lg-3 col-sm-4'">
             <v-sheet
               rounded="lg"
-              min-height="268"
               color="#B7A99A"
-              class="profile-card mt-10"
+              class="profile-card"
             >
               <div class="d-flex justify-center">
                 <span class="firtName">Evanthia</span>
                 <span class="lastName ml-2">DIMARA</span>
               </div>
-              <div class="d-flex justify-center mt-5">
-                <v-avatar size="200">
+              <div class="d-flex justify-center mt-2">
+                <v-avatar size="150">
                   <img
                     src="@/assets/images/evanthia_dimara.png"
                     alt="Evanthia Dimara"
@@ -81,7 +81,7 @@
                   />
                 </a>
               </div>
-              <div class="d-flex justify-center mt-6">
+              <div class="d-flex justify-center mt-2">
                 <h4>Contact me via</h4>
               </div>
 
@@ -94,7 +94,7 @@
                   >evanthia.dimara@gmail.com</a
                 >
               </div>
-              <div class="d-flex justify-center mt-4">
+              <div class="d-flex justify-center mt-2">
                 <h4>Connect with me via</h4>
               </div>
               <div class="d-flex justify-center">
@@ -147,7 +147,7 @@
                   <v-icon color="white">fa fa-file-pdf</v-icon>
                 </a>
               </div>
-              <div class="d-flex justify-center mt-4">
+              <div class="d-flex justify-center my-2">
                 <h4>Mailing Address</h4>
                 <a
                   href="https://goo.gl/maps/Gjphw3XGb4rX3VhU8"
@@ -158,20 +158,19 @@
                 </a>
               </div>
               <div class="d-flex justify-center">
-                <span class="ma-5">
+                <span class="mx-2 mb-2 department-text">
                   Department of Information & Computing Sciences, Faculty of
                   Science, Utrecht University Princetonplein 5 3584 CC Utrecht,
                   Netherlands
                 </span>
               </div>
             </v-sheet>
-          </v-col>
-
-          <v-col cols="9" class="pa-0">
-            <v-sheet min-height="70vh" rounded="lg">
+          </div>
+          <div class="col " :class="stickySidebar ? 'col-12 is-sticky': 'pa-0 col-lg-9 col-sm-8'">
+            <div class="views" min-height="70vh" rounded="lg">
               <router-view></router-view>
-            </v-sheet>
-          </v-col>
+            </div>
+          </div>
         </v-row>
       </v-container>
     </v-main>
@@ -184,18 +183,35 @@ import { mapGetters } from "vuex";
 export default {
   data: () => ({
     links: ["HOME", "RESEARCH", "WORK WITH ME"],
+    stickySidebar: false,
   }),
   mounted() {
     this.$store.dispatch("loadPublications");
+    window.addEventListener('scroll', this.scrollSidebar);
   },
+  methods:{
+    scrollSidebar(e){
+      const yScroll = window.pageYOffset;
+      if(yScroll > 55){
+        this.stickySidebar = true;
+      }else{
+        this.stickySidebar = false;
+      }
+    }
+  }
 };
 </script>
 
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+@import "~animate.css";
+
 .lastName {
   font-weight: bold;
   font-size: 32px;
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight: 900;
 }
 .firtName {
   font-weight: 200;
@@ -220,6 +236,8 @@ export default {
   background-color: #b7a99a;
   color: white !important;
   margin-top: 0px !important;
+  height: 555px;
+  transition: outline 500ms ease-in;
 }
 a:link {
   color: white;
@@ -290,14 +308,76 @@ body {
 
 .custom-title {
   color: #b7a99a;
-  font-weight: 1800;
+  font-weight: 1000;
 }
 .custom-sub-title {
   color: #b7a99a;
-  font-weight: 1000;
+  font-weight: 700;
 }
 
 .search-publications {
   background-color: lightgray;
+}
+
+.department-text{
+  font-size: 14px;
+}
+.views{
+  background-color: #FFFFFF;
+  border-color: #FFFFFF;
+  color: rgba(0, 0, 0, 0.87);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  min-height: 70vh;
+  padding: 1rem;
+}
+@media(max-width: 992){
+  .v-list-item{
+    display: flex;
+    flex-direction: column;
+  }
+ 
+}
+
+@media (min-width: 600px){
+  .sticky{
+    width: 33.3333%;
+    position: fixed;
+  }
+  .col-12.is-sticky{
+    padding-left: 33.3333%;
+  }
+}
+@media (min-width: 960px){
+.v-application .container {
+    max-width: 980px;
+}
+.sticky{
+  position: fixed;
+  top: 55px;
+  width: 33.3333%;
+}
+.col-12.is-sticky{
+  padding: 0;
+  padding-left: 33.3333%;
+}
+}
+
+@media (min-width: 1199px){
+.sticky{
+  position: fixed;
+  top: 55px;
+  width: 296.25px;
+}
+.col-12.is-sticky{
+  padding: 0;
+  padding-left: 296.25px;
+}
+}
+
+@media (max-width: 599px){
+  .sticky{
+    transition: none;
+  }
 }
 </style>

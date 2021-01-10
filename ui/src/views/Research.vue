@@ -1,7 +1,7 @@
 <template>
-  <div class="search">
+  <div class="page search">
     <v-card elevation="0">
-      <h2 class="custom-title ml-5">Main Research Interests</h2>
+      <h2 class="custom-title">Main Research Interests</h2>
       <div class="d-flex flex-no-wrap justify-start">
         <!--
         <v-row>
@@ -16,7 +16,7 @@
        -->
 
         <v-row>
-          <v-col>
+          <v-col cols="12" sm="12" lg="6">
             <v-sheet class="ml-5 mt-4">
               <div>
                 How to achieve a
@@ -44,8 +44,9 @@
               </div>
             </v-sheet>
           </v-col>
-          <v-col>
+          <v-col cols="12" sm="12" lg="6">
             <img
+              class="img-fluid"
               height="260"
               src="@/assets/images/triangle_new-01.png"
               alt="pyramide research interests"
@@ -54,7 +55,7 @@
         </v-row>
       </div>
     </v-card>
-    <h2 class="custom-title ml-5">Selected Publications</h2>
+    <h2 class="custom-title">Selected Publications</h2>
     <v-card
       class="mx-auto"
       elevation="0"
@@ -105,7 +106,7 @@
         </v-list-item-content>
       </v-list-item>
     </v-card>
-    <h2 class="custom-title ml-5">All Publications</h2>
+    <h2 class="custom-title">All Publications</h2>
     <v-flex class="search-publications">
       <v-text-field
         v-model="search"
@@ -214,9 +215,17 @@ export default {
   width: 100%;
 }
 
-.spublication-earch {
-}
 .lecturer {
   margin-top: -5px;
+}
+.img-fluid{
+  max-width: 100%;
+}
+
+@media (max-width: 500px){
+  .v-list--three-line .v-list-item, .v-list-item--three-line{
+    display: flex;
+    flex-direction: column;
+  }
 }
 </style>

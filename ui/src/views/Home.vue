@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <v-card elevation="0 pt-10">
-      <div class="d-flex flex-no-wrap justify-start">
+    <v-card elevation="0">
+      <div class="d-flex flex-no-wrap justify-start bl-1">
         <v-avatar class="ma-3 mt-10" size="125" tile>
           <v-icon class="card-icon">fas fa-info</v-icon>
         </v-avatar>
@@ -40,7 +40,7 @@
       </div>
     </v-card>
     <v-card elevation="0" class="mt-5">
-      <div class="d-flex flex-no-wrap justify-start">
+      <div class="d-flex flex-no-wrap justify-start bl-1">
         <v-avatar class="ma-3 mt-10" size="125" tile>
           <v-icon class="card-icon">fas fa-university</v-icon>
         </v-avatar>
@@ -117,7 +117,21 @@ export default {
   color: #b7a99a;
   font-size: 65px;
 }
+.bl-1{
+  flex-direction: row;
+}
 .recruiting-phd-students {
   width: 281px;
+}
+@media (min-width: 0px){
+  .bl-1{
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 600px){
+  .bl-1{
+    flex-direction: row;
+  }
 }
 </style>
