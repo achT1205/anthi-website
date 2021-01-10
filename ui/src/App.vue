@@ -376,8 +376,9 @@ body {
 }
 
 @media (max-width: 599px){
-  .sticky{
+  .animate__animated.sticky{
     transition: none;
+    animation: none;
   }
 }
 </style>
