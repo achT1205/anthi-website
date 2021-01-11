@@ -1,6 +1,6 @@
 <template>
   <div class="work-with-me ml-10">
-    <h2 class="custom-title mt-10">Job Opportunities</h2>
+    <h2 class="custom-title ">Job Opportunities</h2>
     <p>
       I am hiring graduate students for a fully funded 5-year
       <strong>Ph.D.</strong> at Utrecht University in the area of interactive
