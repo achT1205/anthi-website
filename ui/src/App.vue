@@ -1,16 +1,16 @@
 <template>
-  <v-app id="inspire">
+  <v-app>
+    <Menu />
     <v-container class="py-0">
       <v-row>
-        <Menu />
-      <div class="page-content">
-        <div class="content">
-          <Sidebar />
-          <div class="views">
-            <router-view></router-view>
+        <div class="page-content">
+          <div class="content">
+            <Sidebar />
+            <div class="views">
+              <router-view></router-view>
+            </div>
           </div>
         </div>
-      </div>
       </v-row>
     </v-container>
   </v-app>
@@ -25,32 +25,23 @@ export default {
     Menu,
     Sidebar,
   },
-  data: () => ({
-    links: ["HOME", "RESEARCH", "WORK WITH ME"],
-    stickySidebar: false,
-  }),
   mounted() {
     this.$store.dispatch("loadPublications");
-    window.addEventListener('scroll', this.scrollSidebar);
   },
-  methods:{
-    scrollSidebar(e){
-      const yScroll = window.pageYOffset;
-      if(yScroll > 55){
-        this.stickySidebar = true;
-      }else{
-        this.stickySidebar = false;
-      }
-    }
-  }
+
 };
 </script>
 
 <style lang="scss">
-body {
+body,body .v-application {
   font-size: $fontSize;
   font-family: $fontFamily;
   color: $darkenBrown;
+  font-weight: 400;
+}
+body .v-application .title{
+  font-family: $fontFamily!important;
+  letter-spacing: normal!important;
 }
 .page-content{
   width: 100%;
@@ -127,17 +118,7 @@ body {
 .email-href {
   color: white !important;
 }
-html,
-body {
-  font-family: "Source Sans Pro", sans-serif;
-}
 
-#inspire {
-  font-family: "Source Sans Pro", sans-serif;
-}
-.v-main__wrap {
-  margin-top: -20px;
-}
 .link-1 {
   color: #c48d3b;
 }
@@ -163,9 +144,21 @@ body {
   //box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12);
   border-radius: $radius;
   //min-height: 70vh;
-  padding: 0 .5rem;
-  width: calc(100% - 300px);
+  padding: .5rem .5rem .5rem 0;
+  width: 100%;
+  padding-left: 270px;
 }
+
+@media (max-width: 600px){
+  .views{
+   padding-left: 0;
+   padding-left: 1rem;
+  }
+  .page-content .content{
+    flex-direction: column;
+  }
+}
+
 @media(max-width: 992){
   .v-list-item{
     display: flex;
@@ -174,46 +167,4 @@ body {
  
 }
 
-@media (min-width: 600px){
-  .sticky{
-    width: 33.3333%;
-    position: fixed;
-  }
-  .col-12.is-sticky{
-    padding-left: 33.3333%;
-  }
-}
-@media (min-width: 960px){
-.v-application .container {
-    max-width: 980px;
-}
-.sticky{
-  position: fixed;
-  top: 55px;
-  width: 33.3333%;
-}
-.col-12.is-sticky{
-  padding: 0;
-  padding-left: 33.3333%;
-}
-}
-
-@media (min-width: 1199px){
-.sticky{
-  position: fixed;
-  top: 55px;
-  width: 296.25px;
-}
-.col-12.is-sticky{
-  padding: 0;
-  padding-left: 296.25px;
-}
-}
-
-@media (max-width: 599px){
-  .animate__animated.sticky{
-    transition: none;
-    animation: none;
-  }
-}
 </style>

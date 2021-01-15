@@ -58,18 +58,16 @@
     </p>
     <h3 class="custom-sub-title">Interested?</h3>
     Send me an email at <strong>evanthia.dimara@gmail.com</strong> with:
-    <v-flex class="ml-8 mt-7">
-      <v-row
+    <ul class="mt-4 mb-4" style="list-style:none;">
+      <li
         v-for="(interested, index) in interesteds"
         :key="index"
-        class="interested-row"
+        style="margin-bottom:5px;"
       >
-        <v-col cols="1"><v-icon x-small> far fa-circle</v-icon></v-col>
-        <v-col clos="11"
-          ><p class="interested">{{ interested }}</p></v-col
-        >
-      </v-row>
-    </v-flex>
+        <v-icon x-small> far fa-circle</v-icon>
+        {{ interested }}
+      </li>
+    </ul>
     <h3 class="custom-sub-title">Important remarks</h3>
     <p>
       An honest and grounded decsription of your strong and weak points will be

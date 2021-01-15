@@ -65,7 +65,7 @@
       :key="index"
     >
       <v-list-item three-line>
-        <v-list-item-avatar tile max-width="150" width="150" height="100">
+        <v-list-item-avatar tile class="avatars" >
           <img
             :src="
               require('@/assets/images/paper_teaser_figures/' +
@@ -130,7 +130,7 @@
       :key="publication.id.$t"
     >
       <v-list-item three-line>
-        <v-list-item-avatar tile max-width="150" width="150" height="100">
+        <v-list-item-avatar tile class="avatars">
           <img
             :src="
               require('@/assets/images/paper_teaser_figures/' +
@@ -221,11 +221,20 @@ export default {
 .img-fluid{
   max-width: 100%;
 }
-
+.avatars{
+  width: 150px!important;
+  max-width: 150px!important;
+  height: auto!important;
+}
 @media (max-width: 500px){
   .v-list--three-line .v-list-item, .v-list-item--three-line{
     display: flex;
     flex-direction: column;
+  }
+  .avatars{
+    width: 100%!important;
+    max-width: 100%!important;
+    height: auto!important;
   }
 }
 </style>
