@@ -116,7 +116,7 @@ body .v-application .title{
   color: white !important;
 }
 .email-href {
-  color: white !important;
+   color: white !important;
 }
 
 .link-1 {
