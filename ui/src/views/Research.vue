@@ -16,57 +16,19 @@
       </div>
     </v-card>
     <h2 class="custom-title">Selected Publications</h2>
-    <v-card
-      class="mx-auto"
-      elevation="0"
-      v-for="(publication, index) in publications.filter(
+<publication-card 
+v-for="(publication, index) in publications.filter(
         (p) => p.gsx$isaselectedpublication.$t === '1'
       )"
       :key="index"
-    >
-      <v-list-item three-line>
-        <v-list-item-avatar tile class="avatars" >
-          <img
-            :src="
-              require('@/assets/images/paper_teaser_figures/' +
-                publication.gsx$paperid.$t +
-                '_withFrameAndShadow.png')
-            "
-            :alt="publication.gsx$paperid.$t"
-          />
-        </v-list-item-avatar>
-        <v-list-item-content>
-          <div>{{ publication.gsx$authors.$t }}</div>
-          <h3 class="title">
-            {{ publication.gsx$title.$t }}
-          </h3>
-          <v-list-item-subtitle>{{
-            publication.gsx$venue.$t
-          }}</v-list-item-subtitle>
-          <v-row align="center" justify="start" class="ml-1">
-            <v-icon small>fas fa-copy</v-icon>
-            <div class="mx-2"></div>
-            <v-icon small>fas fa-file-pdf</v-icon>
-            <div class="mx-2"></div>
-            <v-icon small>fas fa-cog</v-icon>
-            <div class="mx-2"></div>
-            <v-icon small>fas fa-file-alt</v-icon>
-            <div class="mx-2"></div>
-            <v-icon small>fas fa-film</v-icon>
-            <div class="mx-2"></div>
-            <v-icon small>mdi-presentation</v-icon>
-            <div class="mx-1"></div>
-            <img
-              src="@/assets/icons/nounproject_Lecturer_8076.svg"
-              alt="Lecturer"
-              height="14"
-              class="lecturer"
-            />
-          </v-row>
-        </v-list-item-content>
-      </v-list-item>
-    </v-card>
+:publication="publication"/>
+
+
+  
     <h2 class="custom-title">All Publications</h2>
+
+
+
     <v-flex class="search-publications">
       <v-text-field
         v-model="search"
@@ -83,59 +45,18 @@
         class="spublication-earch"
       ></v-text-field>
     </v-flex>
-    <v-card
-      class="mx-auto"
-      elevation="0"
-      v-for="publication in filteredPublications"
-      :key="publication.id.$t"
-    >
-      <v-list-item three-line>
-        <v-list-item-avatar tile class="avatars">
-          <img
-            :src="
-              require('@/assets/images/paper_teaser_figures/' +
-                publication.gsx$paperid.$t +
-                '_withFrameAndShadow.png')
-            "
-            :alt="publication.gsx$paperid.$t"
-          />
-        </v-list-item-avatar>
-        <v-list-item-content>
-          <div>{{ publication.gsx$authors.$t }}</div>
-          <h3 class="title">
-            {{ publication.gsx$title.$t }}
-          </h3>
-          <v-list-item-subtitle>{{
-            publication.gsx$venue.$t
-          }}</v-list-item-subtitle>
-          <v-row align="center" justify="start" class="ml-5">
-            <v-icon >fas fa-copy</v-icon>
-            <div class="mx-2"></div>
-            <v-icon>fas fa-file-pdf</v-icon>
-            <div class="mx-2"></div>
-            <v-icon>fas fa-cog</v-icon>
-            <div class="mx-2"></div>
-            <v-icon>fas fa-file-alt</v-icon>
-            <div class="mx-2"></div>
-            <v-icon>fas fa-film</v-icon>
-            <div class="mx-2"></div>
-            <v-icon>mdi-presentation</v-icon>
-            <div class="mx-1"></div>
-            <img
-              src="@/assets/icons/nounproject_Lecturer_8076.svg"
-              alt="Lecturer"
-              height="23"
-              class="lecturer"
-            />
-          </v-row>
-        </v-list-item-content>
-      </v-list-item>
-    </v-card>
+
+<publication-card 
+v-for="(publication, index) in filteredPublications"
+      :key="index"
+:publication="publication"/>
+
   </div>
 </template>
 
 <script>
 import { mapGetters } from "vuex";
+import PublicationCard from '@/components/PublicationCard.vue'
 export default {
   name: "Search",
   data() {
@@ -144,7 +65,7 @@ export default {
       filteredPublications: [],
     };
   },
-  components: {},
+  components: {PublicationCard},
   computed: {
     ...mapGetters(["publications"]),
   },
@@ -198,3 +119,4 @@ export default {
   }
 }
 </style>
+
