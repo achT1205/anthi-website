@@ -126,17 +126,15 @@ body .v-application .title{
 }
 
 .link-1 {
-  color: #c48d3b;
+  color: #504538;
 }
 
 .custom-title {
-  // color: #b7a99a;
-  color: #c48d3b;
+  color: #504538;
   font-weight: 1000;
 }
 .custom-sub-title {
-  // color: #b7a99a;
-  color: #c48d3b;
+  color: #504538;
   font-weight: 700;
 }
 
