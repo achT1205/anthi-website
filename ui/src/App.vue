@@ -86,7 +86,9 @@ body .v-application .title{
   height: 60px !important;
   width: 148px !important;
   border: none;
-  color: #b7a99a !important;
+  // color: #b7a99a !important;
+  color: #C58C39 !important;
+
   font-size: 24px !important;
   background-color: #eeeeee;
 }
@@ -94,7 +96,9 @@ body .v-application .title{
 .nav-tabs-item-other {
   height: 60px !important;
   border: none;
-  color: #b7a99a !important;
+  // color: #b7a99a !important;
+  color: #C58C39 !important;
+
   font-size: 24px !important;
 }
 
@@ -103,7 +107,9 @@ body .v-application .title{
   border-style: solid !important;
   border-width: 1.5px !important;
   border-color: #504538 !important;
-  background-color: #b7a99a !important;
+  //background-color: #b7a99a !important;
+  background-color: #C58C39 !important;
+
   color: white !important;
   background-color: #eeeeee;
 }
@@ -124,11 +130,13 @@ body .v-application .title{
 }
 
 .custom-title {
-  color: #b7a99a;
+  // color: #b7a99a;
+  color: #c48d3b;
   font-weight: 1000;
 }
 .custom-sub-title {
-  color: #b7a99a;
+  // color: #b7a99a;
+  color: #c48d3b;
   font-weight: 700;
 }
 

@@ -79,7 +79,7 @@
         clear-icon="mdi-close-circle-outline"
         prepend-inner-icon="fas fa-search"
         outlined
-        color="#b7a99a"
+        color="#C48D3B"
         class="spublication-earch"
       ></v-text-field>
     </v-flex>

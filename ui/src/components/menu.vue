@@ -72,19 +72,19 @@ header {
     padding-right: 11.5px;
   }
   .item-link.v-tab.v-tab.v-tab--active{
-    background: $lightenGray;
+    background: $gold;
     color: $white;
     border: 1px solid $black;
   }
 }
 .theme--light.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active), .theme--light.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active) > .v-icon, .theme--light.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active) > .v-btn, .theme--light.v-tabs > .v-tabs-bar .v-tab--disabled{
-  color: $lightenGray;
+  color: $gold;
 }
 .menu-mobile{
   display: none;
   justify-content: flex-end;
   flex-direction: column;
-  border-bottom: 1px solid $lightenGray;
+  border-bottom: 1px solid $gold;
   .bars-btn{
     width: 100%;
     justify-content: flex-end;

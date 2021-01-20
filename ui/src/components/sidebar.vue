@@ -84,7 +84,7 @@
     z-index: 1;
     border: 1px solid $black;
     border-radius: $radius;
-    background: $lightenGray;
+    background: $gold;
     width: 251px;
     height: 93vh;
     position: fixed;

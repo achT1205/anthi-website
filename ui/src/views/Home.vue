@@ -114,7 +114,8 @@ export default {
   margin-right: 50px;
 }
 .card-icon {
-  color: #b7a99a;
+  /* color: #b7a99a; */
+   color: #C58C39;
   font-size: 65px;
 }
 .bl-1{
