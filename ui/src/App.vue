@@ -106,7 +106,7 @@ body .v-application .title{
   border-radius: 6px !important;
   border-style: solid !important;
   border-width: 1.5px !important;
-  border-color: #504538 !important;
+  border-color:$darkenBrown !important;
   //background-color: #b7a99a !important;
   background-color: #C58C39 !important;
 
@@ -126,20 +126,21 @@ body .v-application .title{
 }
 
 .link-1 {
-  color: #504538;
+  color: $darkenBrown;
 }
 
 .custom-title {
-  color: #504538;
+  color: $darkenBrown;
   font-weight: 1000;
 }
 .custom-sub-title {
-  color: #504538;
+  color: $darkenBrown;
   font-weight: 700;
 }
 
 .search-publications {
-  background-color: lightgray;
+  background-color:lightgray;
+  opacity: 50%;
 }
 
 .department-text{

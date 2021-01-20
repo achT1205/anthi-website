@@ -26,20 +26,35 @@
             <v-icon small>fas fa-file-pdf</v-icon>
           </a>
           <div class="mx-2"></div>
+          <a :href="publication.gsx$suppementarymaterial.$t" target="_blank">
           <v-icon small>fas fa-cog</v-icon>
+         </a>
+        <div class="mx-2"></div>
+            <a :href="publication.gsx$bibtex.$t" target="_blank">    
+                <img
+                    src="@/assets/icons/nounproject_TEX File_342079.svg"
+                    alt="BibTex"
+                    height="14"
+                    class="lecturer"
+                />
+            </a>
           <div class="mx-2"></div>
-          <v-icon small>fas fa-file-alt</v-icon>
+            <a :href="publication.gsx$shortpreviewvideo.$t" target="_blank">    
+                <v-icon small>fas fa-film</v-icon>
+            </a>
           <div class="mx-2"></div>
-          <v-icon small>fas fa-film</v-icon>
-          <div class="mx-2"></div>
-          <v-icon small>mdi-presentation</v-icon>
+            <a :href="publication.gsx$presentationslides.$t" target="_blank">    
+                <v-icon small>mdi-presentation</v-icon>
+            </a>
           <div class="mx-1"></div>
-          <img
-            src="@/assets/icons/nounproject_Lecturer_8076.svg"
-            alt="Lecturer"
-            height="14"
-            class="lecturer"
-          />
+            <a :href="publication.gsx$presentationvideo.$t" target="_blank">    
+                <img
+                    src="@/assets/icons/nounproject_Lecturer_8076.svg"
+                    alt="Lecturer"
+                    height="14"
+                    class="lecturer"
+                />
+            </a>
         </v-row>
       </v-list-item-content>
     </v-list-item>
