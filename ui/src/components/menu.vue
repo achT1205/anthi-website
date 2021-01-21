@@ -14,7 +14,7 @@
     </v-tabs>
     <nav class="menu-mobile">
       <div class="bars-btn">
-      <v-btn @click="showNav = !showNav" color="#C48D3B" outlined>
+      <v-btn @click="showNav = !showNav" color="$gold" outlined>
         <i class="fas fa-bars"></i>
       </v-btn>
       </div>

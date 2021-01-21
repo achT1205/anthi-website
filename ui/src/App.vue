@@ -1,11 +1,11 @@
 <template>
-  <v-app>
-    <Menu />
-    <v-container class="py-0">
+  <v-app> 
+    <Menu class="py-5" />
+    <v-container class="py-5">
       <v-row>
-        <div class="page-content">
-          <div class="content">
-            <Sidebar />
+        <div class="page-content py-5">
+          <div class="content py-5">
+            <Sidebar class="py-5" />
             <div class="views">
               <router-view></router-view>
             </div>
@@ -87,7 +87,7 @@ body .v-application .title{
   width: 148px !important;
   border: none;
   // color: #b7a99a !important;
-  color: #C58C39 !important;
+  color: $gold !important;
 
   font-size: 24px !important;
   background-color: #eeeeee;
@@ -97,7 +97,7 @@ body .v-application .title{
   height: 60px !important;
   border: none;
   // color: #b7a99a !important;
-  color: #C58C39 !important;
+  color: $gold !important;
 
   font-size: 24px !important;
 }

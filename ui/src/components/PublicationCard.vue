@@ -1,5 +1,5 @@
 <template>
-  <v-card class="mx-auto" elevation="0">
+  <v-card class="mx-auto" elevation="0" >
     <v-list-item three-line>
       <v-list-item-avatar tile class="avatars">
         <img

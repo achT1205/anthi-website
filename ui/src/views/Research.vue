@@ -17,10 +17,10 @@
     </v-card>
     <h2 class="custom-title">Selected Publications</h2>
 <publication-card 
-v-for="(publication, index) in publications.filter(
+v-for="publication in publications.filter(
         (p) => p.gsx$isaselectedpublication.$t === '1'
       )"
-      :key="index"
+      :key="'_'+publication.gsx$paperid.$t"
 :publication="publication"/>
 
 
@@ -47,8 +47,8 @@ v-for="(publication, index) in publications.filter(
     </v-flex>
 
 <publication-card 
-v-for="(publication, index) in filteredPublications"
-      :key="index"
+v-for="publication in filteredPublications"
+      :key="publication.gsx$paperid.$t"
 :publication="publication"/>
 
   </div>
@@ -96,27 +96,10 @@ export default {
   width: 100%;
 }
 
-.lecturer {
-  margin-top: -5px;
-}
+
 .img-fluid{
   max-width: 100%;
 }
-.avatars{
-  width: 150px!important;
-  max-width: 150px!important;
-  height: auto!important;
-}
-@media (max-width: 500px){
-  .v-list--three-line .v-list-item, .v-list-item--three-line{
-    display: flex;
-    flex-direction: column;
-  }
-  .avatars{
-    width: 100%!important;
-    max-width: 100%!important;
-    height: auto!important;
-  }
-}
+
 </style>
 

@@ -88,7 +88,7 @@
     width: 251px;
     height: 93vh;
     position: fixed;
-    top: 41px;
+    top: 61px;
     color: $white;
     .sidebar-content{
       width: 85%;
