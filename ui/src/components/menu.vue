@@ -65,7 +65,7 @@ header {
   z-index: 1;
   .item-link.v-tab.v-tab{
     color: $lightenGray;
-    font-weight: 700;
+    font-weight: 600;  // semibold
     font-size: $menuFontSize;
     border-radius: $radius;
     padding-left: 11.5px;
@@ -74,7 +74,7 @@ header {
   .item-link.v-tab.v-tab.v-tab--active{
     background: $gold;
     color: $white;
-    border: 1px solid $black;
+    border: 1px solid $darkenBrown;
   }
 }
 .theme--light.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active), .theme--light.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active) > .v-icon, .theme--light.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active) > .v-btn, .theme--light.v-tabs > .v-tabs-bar .v-tab--disabled{

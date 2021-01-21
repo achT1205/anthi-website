@@ -18,7 +18,7 @@
       <span>She/Her</span>
     </div>
     <div class="d-flex utrechtUniversity">
-      <a href="http://www.cs.uu.nl/staff/dimara.html" target="_blank">
+      <a href="https://www.uu.nl/staff/EDimara" target="_blank">
         <img height="35" src="@/assets/images/UtrechtUniversity_logo_EN_WHITE.png"
           alt="Utrecht University" />
       </a>
@@ -82,16 +82,16 @@
 <style lang="scss" scoped>
   .sidebar {
     z-index: 1;
-    border: 1px solid $black;
+    border: 1px solid $darkenBrown;
     border-radius: $radius;
     background: $gold;
     width: 251px;
     height: 93vh;
     position: fixed;
-    top: 61px;
+    top: 58px;
     color: $white;
     .sidebar-content{
-      width: 85%;
+      width: 75%;
       margin: auto;
     }
 

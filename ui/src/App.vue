@@ -1,12 +1,12 @@
 <template>
   <v-app> 
-    <Menu class="py-5" />
-    <v-container class="py-5">
+    <Menu class="pt-4" />
+    <v-container class="pt-4">
       <v-row>
-        <div class="page-content py-5">
-          <div class="content py-5">
-            <Sidebar class="py-5" />
-            <div class="views">
+        <div class="page-content pt-4">
+          <div class="content pt-3">
+            <Sidebar class="pt-3" />
+            <div class="views pt-13">
               <router-view></router-view>
             </div>
           </div>
@@ -131,7 +131,7 @@ body .v-application .title{
 
 .custom-title {
   color: $darkenBrown;
-  font-weight: 1000;
+  font-weight: 500;
 }
 .custom-sub-title {
   color: $darkenBrown;

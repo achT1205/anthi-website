@@ -13,9 +13,9 @@
       </v-list-item-avatar>
       <v-list-item-content>
         <div>{{ publication.gsx$authors.$t }}</div>
-        <h3 class="title">
+        <div class="title">
           {{ publication.gsx$title.$t }}
-        </h3>
+        </div>
         <v-list-item-subtitle>{{
           publication.gsx$venue.$t
         }}</v-list-item-subtitle>
@@ -34,7 +34,7 @@
                 <img
                     src="@/assets/icons/nounproject_TEX File_342079.svg"
                     alt="BibTex"
-                    height="14"
+                    height="15"
                     class="lecturer"
                 />
             </a>
@@ -51,7 +51,7 @@
                 <img
                     src="@/assets/icons/nounproject_Lecturer_8076.svg"
                     alt="Lecturer"
-                    height="14"
+                    height="15"
                     class="lecturer"
                 />
             </a>
