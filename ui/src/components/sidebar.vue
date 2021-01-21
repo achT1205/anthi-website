@@ -60,7 +60,7 @@
         <v-icon small color="white">fab fa-orcid</v-icon>
       </a>
     </div>
-    <div class="d-flex mt-4">
+    <div class="d-flex mt-4 mb-12">
       <h4>My CV</h4>
       <a href="" target="_blank" class="ml-2">
         <v-icon color="white">fa fa-file-pdf</v-icon>
