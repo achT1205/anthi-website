@@ -46,8 +46,8 @@
       <a href="https://twitter.com/anthi_dimara" target="_blank" class="ml-2">
         <v-icon small color="white">fa fa-twitter</v-icon>
       </a>
-      <a href="https://www.linkedin.com/in/evanthiadimara/" class="ml-2">
-        <v-icon color="white">fa fa-linkedin</v-icon>
+      <a href="https://www.linkedin.com/in/evanthiadimara/" target="_blank" class="ml-2">
+        <v-icon small color="white">fa fa-linkedin</v-icon>
       </a>
       <a href="https://www.mendeley.com/profiles/evanthia-dimara2/" target="_blank" class="ml-2">
         <v-icon small color="white">fab fa-mendeley</v-icon>
