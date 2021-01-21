@@ -127,7 +127,7 @@ body .v-application .title{
 }
 
 .link-1 {
-  color: $darkenBrown;
+  color: $gold;
 }
 
 .custom-title {

@@ -1,11 +1,20 @@
 <template>
   <div class="home">
     <v-card elevation="0">
+       <div class="d-flex justify-center">
+         <img
+            class="tv-preview"
+              src="@/assets/images/tv-placeholder.png"
+              alt="papers-preview"
+            />
+        </div>
       <div class="d-flex flex-no-wrap justify-start bl-1">
+        
         <v-avatar class="ma-3 mt-10" size="125" tile>
           <v-icon class="card-icon">fas fa-info</v-icon>
         </v-avatar>
         <div>
+        
           <v-card-text>
             <div>
               I am an Assistant Professor of Computer Science at Utrecht
@@ -98,24 +107,27 @@ export default {
   components: {},
 };
 </script>
-<style scoped>
+<style lang="scss" scoped>
 
 .more-information {
-  color: #b7a99a;
+  color: $darkenBrown;
   background-color: transparent;
   text-decoration: none;
 }
 
+.tv-preview{
+width: 25%;
+}
 .more-information-mi {
-  color: #b7a99a;
+  color: $darkenBrown;
   background-color: transparent;
   text-decoration: none;
   float: right;
   margin-right: 50px;
 }
 .card-icon {
-  /* color: #b7a99a; */
-   color: #C58C39;
+  color: $darkenBrown;
+  opacity:80%;
   font-size: 65px;
 }
 .bl-1{
