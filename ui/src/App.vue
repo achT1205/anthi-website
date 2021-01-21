@@ -56,7 +56,7 @@ body .v-application .title{
   padding-top: 60px!important;
 }
 .lastName {
-  font-weight: 700; //Bold
+  font-weight: 600; //Bold
   font-size: 30px;
 }
 

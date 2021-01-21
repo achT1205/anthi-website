@@ -4,7 +4,7 @@
 
     <div class="d-flex justify-center">
       <span class="firtName">Evanthia</span>
-      <span class="lastName ml-2">DIMARA</span>
+      <span class="lastName ml-1">DIMARA</span>
     </div>
     <div class="d-flex justify-center mt-2">
       <v-avatar size="200" style="border:1px solid white;">

@@ -135,7 +135,7 @@ width: 25%;
 }
 .card-icon {
   color: $darkenBrown;
-  opacity:80%;
+  opacity:40%;
   font-size: 65px;
 }
 
