@@ -27,7 +27,7 @@
           <img height="35" src="@/assets/images/UtrechtUniversity_logo_EN_WHITE.png" alt="Utrecht University Logo" />
         </a>
       </div>
-    <div class="d-flex mt-5">
+    <div class="d-flex mt-6">
         <h4>Contact me via</h4>
     </div>
 
@@ -36,7 +36,7 @@
       <a href="mailto:evanthia.dimara@gmail.com" target="_blank"
         class="ml-2 email-href">evanthia.dimara@gmail.com</a>
     </div>
-    <div class="d-flex mt-4">
+    <div class="d-flex mt-3">
       <h4>Connect with me via</h4>
     </div>
     <div class="d-flex">
@@ -60,30 +60,37 @@
         <v-icon small color="white">fab fa-orcid</v-icon>
       </a>
     </div>
-    <div class="d-flex mt-4 mb-12">
-      <h4>My CV</h4>
-      <a href="" target="_blank" class="ml-2">
-        <v-icon color="white">fa fa-file-pdf</v-icon>
-      </a>
+     <div class="d-flex mt-3">
+      <h4>Download my CV</h4>
     </div>
-    <div class="d-flex mt-3">
+   <div class="d-flex">
+      <a href="" target="_blank" class="ml-0">
+        <v-icon small color="white">fa fa-file-pdf</v-icon>
+      </a>
+      </div>
+  
+    
+    <div class="contact-footer">
       <h4>Mailing Address</h4>
-      <a href="https://goo.gl/maps/Gjphw3XGb4rX3VhU8" target="_blank" class="ml-1">
-        <v-icon color="white">fas fa-search-location</v-icon>
+      <a href="https://goo.gl/maps/Gjphw3XGb4rX3VhU8" target="_blank" class="ml-0">
+        <v-icon small color="white">fas fa-search-location</v-icon>
       </a>
-    </div>
-    <div class="d-flex">
-      <span class="department-text">
+      <div class="department-text">    
         Department of Information & Computing Sciences, Faculty of
-        Science, Utrecht University Princetonplein 5 3584 CC Utrecht,
+        Science, Utrecht University, Princetonplein 5, 3584 CC Utrecht,
         Netherlands
-      </span>
+      </div>
     </div>
-    </div>
- 
-  </div>
+  </div>  
+</div>
+
 </template>
 <style lang="scss" scoped>
+  .contact-footer{
+    position: absolute;
+    bottom: 20px;
+    max-width: 195px;
+  }
   .sidebar {
     z-index: 1;
     border: 1px solid $darkenBrown;
