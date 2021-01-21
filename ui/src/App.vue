@@ -126,6 +126,7 @@ body .v-application .title{
    color: white !important;
 }
 
+
 .link-1 {
   color: $gold;
 }

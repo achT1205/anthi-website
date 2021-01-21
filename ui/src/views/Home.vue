@@ -17,13 +17,12 @@
         
           <v-card-text>
             <div>
-              I am an Assistant Professor of Computer Science at Utrecht
-              University, VIG team (starting Jan’ 21).
-              <br />
-              I specialize in Information Visualization & Human-Computer
-              Interaction.
+              I am an Assistant Professor of Computer Science at 
+              <a href="https://www.uu.nl/staff/EDimara" target="_blank"> Utrecht University </a>, 
+              <a class="discrete-link" href="https://vig.science.uu.nl/" target="_blank"> VIG team</a>.  
+              I specialize in  <a class="mr-5 discrete-link" href="https://en.wikipedia.org/wiki/Information_visualization" target="_blank"> Information Visualization </a> & <a class="discrete-link" href="https://en.wikipedia.org/wiki/Human%E2%80%93computer_interaction" target="_blank"> Human-Computer Interaction </a>.
             </div>
-            <div class="mt-5">
+            <div class="mt-3">
               I study
               <strong class="link-1">decision making</strong> -- how
               technology can help people to make unbiased and informed decisions
@@ -31,12 +30,11 @@
               decisions for which the current decision-support systems, models
               and people's heuristics tend to fail.
               <br />
-              <div class="d-flex flex-no-wrap justify-end">
-                <a text @click="reveal = true" class="mr-5 more-information">
-                  more information >>
-                </a>
-              </div>
-            </div>
+             <a text @click="reveal = true" class="more-information-mi">
+                more information >>
+              </a>
+             
+            </div>  <br /> <br />
             <div class="recruiting-phd-students">
               I am actively recruiting PhD students.
               <br />
@@ -56,17 +54,23 @@
         <div>
           <v-card-text>
             <div>
+              <span class="mr-3">2021</span> Assistant Professor at <a href="https://www.uu.nl/staff/EDimara" target="_blank"> Utrecht University </a>,
+              <a href="https://vig.science.uu.nl/" target="_blank"> A. Telea’s visualization team </a>, Netherlands.
+            </div>
+            <div>
               <span class="mr-3">2020</span> PostDoc at University of Konstanz,
-              D. Keim’s visual analytics team.
+              <a href="https://www.vis.uni-konstanz.de/" target="_blank"> D. Keim’s visual analytics team </a>, Germany.
             </div>
             <div>
-              <span class="mr-3">2019</span> PostDoc at Sorbonne University, G.
-              Bailly’s HCI team.
+              <span class="mr-3">2019</span> PostDoc at Sorbonne University, 
+              <a href="https://hci.isir.upmc.fr/" target="_blank">G. Bailly’s HCI team </a>, France.
             </div>
             <div>
+          
               <span class="mr-3">2017</span> Ph.D. (3-year) in Computer Science
-              by INRIA & University of Paris-Saclay.
-              <div class="ml-11">
+              by INRIA & University of Paris-Saclay, 
+                 <a href="https://www.aviz.fr/" target="_blank">Jean-Daniel Fekete's visualization team</a>, France.
+              <div class="ml-4">
                 <v-row>
                   <v-col cols="1">
                     <v-icon>fas fa-file-download</v-icon>
@@ -78,19 +82,20 @@
                     Paradigm.
                   </v-col>
                   <div class="ml-3">
-                    Advisors: Pierre Dragicevic, AVIZ team and Anastasia
-                    Bezerianos, ILDA team.
+                    (Best) Advisors (Ever):  <a href="http://dragice.fr/" target="_blank">Pierre Dragicevic</a>,  <a href="https://www.aviz.fr/" target="_blank"> AVIZ team</a> and 
+                    <a href="https://www.lri.fr/~anab/" target="_blank">Anastasia
+                    Bezerianos</a>, <a href="https://ilda.saclay.inria.fr/" target="_blank">ILDA team</a>.
                   </div>
                 </v-row>
               </div>
             </div>
             <div>
               <span class="mr-3">2013</span> M.Sc. in Human - Computer
-              Interaction by University of Paris-Saclay.
+              Interaction by University of Paris-Saclay, France.
             </div>
             <div>
-              <span class="mr-3">2012</span> B.Sc. in Informatics &
-              Telecommunications by University of Athens.
+              <span class="mr-3">2012</span> B.Sc. in <a href="https://www.di.uoa.gr/en" target="_blank"> Informatics &
+              Telecommunications by National and Kapodistrian University of Athens</a>, Greece.
             </div>
           </v-card-text>
         </div>
@@ -113,23 +118,29 @@ export default {
   color: $darkenBrown;
   background-color: transparent;
   text-decoration: none;
+  float: left;
+  margin-left: 0px;
+  opacity: 50%;
 }
 
 .tv-preview{
 width: 25%;
 }
 .more-information-mi {
-  color: $darkenBrown;
   background-color: transparent;
   text-decoration: none;
-  float: right;
-  margin-right: 50px;
+  float: left;
+  margin-left: 0px;
+  opacity: 60%;
 }
 .card-icon {
   color: $darkenBrown;
   opacity:80%;
   font-size: 65px;
 }
+
+
+
 .bl-1{
   flex-direction: row;
 }
@@ -147,4 +158,9 @@ width: 25%;
     flex-direction: row;
   }
 }
+
+.v-application a {
+  color: $darkenBrown;
+}
+
 </style>
