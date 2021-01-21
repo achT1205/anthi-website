@@ -22,6 +22,7 @@
               <a class="discrete-link" href="https://vig.science.uu.nl/" target="_blank"> VIG team</a>.  
               I specialize in  <a class="mr-5 discrete-link" href="https://en.wikipedia.org/wiki/Information_visualization" target="_blank"> Information Visualization </a> & <a class="discrete-link" href="https://en.wikipedia.org/wiki/Human%E2%80%93computer_interaction" target="_blank"> Human-Computer Interaction </a>.
             </div>
+
             <div class="mt-3">
               I study
               <strong class="link-1">decision making</strong> -- how
@@ -32,10 +33,10 @@
               <br />
              <a text @click="reveal = true" class="more-information-mi">
                 more information >>
-              </a>
-             
-            </div>  <br /> <br />
-            <div class="recruiting-phd-students">
+              </a>    
+            </div>  
+          <br/>
+            <div class="mt-3">
               I am recruiting PhD students.
               <br />
               <a text @click="reveal = true" class="more-information-mi">
@@ -46,7 +47,8 @@
         </div>
       </div>
     </v-card>
-    <v-card elevation="0" class="mt-5">
+
+    <v-card elevation="0" class="mt-10">
       <div class="d-flex flex-no-wrap justify-start bl-1">
         <v-avatar class="ma-3 mt-10" size="125" tile>
           <v-icon class="card-icon">fas fa-university</v-icon>
@@ -55,7 +57,7 @@
           <v-card-text>
             <div>
               <span class="mr-3">2021</span> Assistant Professor at <a href="https://www.uu.nl/staff/EDimara" target="_blank"> Utrecht University</a>,
-              <a href="https://vig.science.uu.nl/" target="_blank">  A. Telea’s visualization team </a>, Netherlands.
+              <a href="https://vig.science.uu.nl/" target="_blank">  A. Telea’s visualization team</a>, Netherlands.
             </div>
             <div>
               <span class="mr-3">2020</span> PostDoc at University of Konstanz,
@@ -68,24 +70,23 @@
             <div>
           
               <span class="mr-3">2017</span> Ph.D. (3-year) in Computer Science
-              by INRIA & University of Paris-Saclay, 
+              by INRIA & University Paris-Saclay, 
                  <a href="https://www.aviz.fr/" target="_blank">Jean-Daniel Fekete's visualization team</a>, France.
-              <div class="ml-4">
+              <div class="ml-11">
                 <v-row>
-                  <v-col cols="1">
-                    <v-icon>fas fa-file-download</v-icon>
-                  </v-col>
-                  <v-col cols="11">
-                    Information Visualization for Decision Making:
-                    <br />
-                    Identifying Biases and Moving Beyond the Visual Analysis
-                    Paradigm.
-                  </v-col>
-                  <div class="ml-3">
-                    (Best) Advisors (Ever):  <a href="http://dragice.fr/" target="_blank">Pierre Dragicevic</a>,  <a href="https://www.aviz.fr/" target="_blank"> AVIZ team</a> and 
-                    <a href="https://www.lri.fr/~anab/" target="_blank">Anastasia
-                    Bezerianos</a>, <a href="https://ilda.saclay.inria.fr/" target="_blank">ILDA team</a>.
-                  </div>
+                    <v-col cols="1">
+                      <a href="https://tel.archives-ouvertes.fr/tel-01968033/file/75268_DIMARA_2017_diffusion.pdf" target="_blank"><v-icon>fas fa-file-download</v-icon> </a>
+                    </v-col>
+                    <v-col cols="11 tablecolumns-11">
+                      Information Visualization for Decision Making:
+                      <br />
+                      Identifying Biases and Moving Beyond the Visual Analysis Paradigm.
+                    </v-col>
+                    <div class="ml-2 phdadvisors">
+                      <span class="demphasize"> (best)</span> Advisors <span class="demphasize">(ever)</span>  <a href="http://dragice.fr/" target="_blank">Pierre Dragicevic</a>,  <a href="https://www.aviz.fr/" target="_blank"> AVIZ team</a> & 
+                      <a href="https://www.lri.fr/~anab/" target="_blank">Anastasia
+                      Bezerianos</a>, <a href="https://ilda.saclay.inria.fr/" target="_blank">ILDA team</a>.
+                    </div>
                 </v-row>
               </div>
             </div>
@@ -139,7 +140,20 @@ width: 25%;
   font-size: 65px;
 }
 
+.tablecolumns-11{
+margin-left: -28px;
+    margin-top: -9px;
+    }
 
+  .phdadvisors {
+     margin-top: -11px;
+  }
+
+  .demphasize{
+    opacity:50%;
+    color:$darkenBrown;
+
+  }
 
 .bl-1{
   flex-direction: row;

@@ -176,4 +176,8 @@ body .v-application .title{
  
 }
 
+.container {
+  max-width: 1200px;
+}
+
 </style>
