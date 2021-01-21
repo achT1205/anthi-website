@@ -1,5 +1,7 @@
 <template>
+
   <div class="sidebar">
+
     <div class="d-flex justify-center">
       <span class="firtName">Evanthia</span>
       <span class="lastName ml-2">DIMARA</span>
@@ -9,22 +11,24 @@
         <img src="@/assets/images/evanthia_dimara.png" alt="Evanthia Dimara" />
       </v-avatar>
     </div>
+
+
     <div class="sidebar-content">
-      <div class="d-flex mt-2">
-      <h1 class="title">Assistant Professor</h1>
-    </div>
-    <div class="d-flex justify-end she-her">
-      <v-spacer></v-spacer>
-      <span>She/Her</span>
-    </div>
-    <div class="d-flex utrechtUniversity">
-      <a href="https://www.uu.nl/staff/EDimara" target="_blank">
-        <img height="35" src="@/assets/images/UtrechtUniversity_logo_EN_WHITE.png"
-          alt="Utrecht University" />
-      </a>
-    </div>
-    <div class="d-flex mt-2">
-      <h4>Contact me via</h4>
+
+      <div class="d-flex justify-center mt-1">
+        <h1 class="title">Assistant Professor</h1>
+      </div>
+      <div class="d-flex justify-end she-her">
+        <v-spacer></v-spacer>
+        <span>She/Her</span>
+      </div>
+      <div class="d-flex justify-center utrechtUniversity">
+        <a href="https://www.uu.nl/staff/EDimara" target="_blank">
+          <img height="35" src="@/assets/images/UtrechtUniversity_logo_EN_WHITE.png" alt="Utrecht University Logo" />
+        </a>
+      </div>
+    <div class="d-flex mt-5">
+        <h4>Contact me via</h4>
     </div>
 
     <div class="d-flex">
@@ -32,7 +36,7 @@
       <a href="mailto:evanthia.dimara@gmail.com" target="_blank"
         class="ml-2 email-href">evanthia.dimara@gmail.com</a>
     </div>
-    <div class="d-flex mt-2">
+    <div class="d-flex mt-4">
       <h4>Connect with me via</h4>
     </div>
     <div class="d-flex">
@@ -62,9 +66,9 @@
         <v-icon color="white">fa fa-file-pdf</v-icon>
       </a>
     </div>
-    <div class="d-flex my-2">
+    <div class="d-flex mt-3">
       <h4>Mailing Address</h4>
-      <a href="https://goo.gl/maps/Gjphw3XGb4rX3VhU8" target="_blank" class="ml-2">
+      <a href="https://goo.gl/maps/Gjphw3XGb4rX3VhU8" target="_blank" class="ml-1">
         <v-icon color="white">fas fa-search-location</v-icon>
       </a>
     </div>
@@ -86,9 +90,9 @@
     border-radius: $radius;
     background: $gold;
     width: 251px;
-    height: 93vh;
+    height: 92.5vh;
     position: fixed;
-    top: 58px;
+    top: 47px;
     color: $white;
     .sidebar-content{
       width: 75%;

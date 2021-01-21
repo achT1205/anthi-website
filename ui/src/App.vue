@@ -1,9 +1,9 @@
 <template>
   <v-app> 
-    <Menu class="pt-4" />
-    <v-container class="pt-4">
+    <Menu class="pt-1" />
+    <v-container class="pt-1">
       <v-row>
-        <div class="page-content pt-4">
+        <div class="page-content pt-1">
           <div class="content pt-3">
             <Sidebar class="pt-3" />
             <div class="views pt-13">
@@ -56,23 +56,24 @@ body .v-application .title{
   padding-top: 60px!important;
 }
 .lastName {
-  font-weight: bold;
-  font-size: 32px;
+  font-weight: 700; //Bold
+  font-size: 30px;
 }
 
 .firtName {
-  font-weight: 200;
-  font-size: 32px;
+  font-weight: 300; // Light
+  font-size: 28px;
 }
 .she-her {
   font-size: 10px;
   margin-top: -10px;
-  margin-right: 61px;
+  margin-right: 16px;
 }
 
 
 .utrechtUniversity {
   margin-top: -10px;
+  
 }
 .layout {
   margin: 30px;
@@ -144,7 +145,7 @@ body .v-application .title{
 }
 
 .department-text{
-  font-size: 14px;
+  font-size: 11px;
 }
 .views{
   //color: rgba(0, 0, 0, 0.87);
