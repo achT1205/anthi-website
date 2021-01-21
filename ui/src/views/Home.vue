@@ -36,7 +36,7 @@
              
             </div>  <br /> <br />
             <div class="recruiting-phd-students">
-              I am actively recruiting PhD students.
+              I am recruiting PhD students.
               <br />
               <a text @click="reveal = true" class="more-information-mi">
                 more information >>
@@ -54,8 +54,8 @@
         <div>
           <v-card-text>
             <div>
-              <span class="mr-3">2021</span> Assistant Professor at <a href="https://www.uu.nl/staff/EDimara" target="_blank"> Utrecht University </a>,
-              <a href="https://vig.science.uu.nl/" target="_blank"> A. Telea’s visualization team </a>, Netherlands.
+              <span class="mr-3">2021</span> Assistant Professor at <a href="https://www.uu.nl/staff/EDimara" target="_blank"> Utrecht University</a>,
+              <a href="https://vig.science.uu.nl/" target="_blank">  A. Telea’s visualization team </a>, Netherlands.
             </div>
             <div>
               <span class="mr-3">2020</span> PostDoc at University of Konstanz,
