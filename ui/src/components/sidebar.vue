@@ -7,7 +7,7 @@
       <span class="lastName ml-1">DIMARA</span>
     </div>
     <div class="d-flex justify-center mt-2">
-      <v-avatar size="200" style="border:1px solid white;">
+      <v-avatar size="170" style="border:1px solid white;">
         <img src="@/assets/images/evanthia_dimara.png" alt="Evanthia Dimara" />
       </v-avatar>
     </div>
@@ -89,20 +89,20 @@
   .contact-footer{
     position: absolute;
     bottom: 20px;
-    max-width: 195px;
+    max-width: 210px;
   }
   .sidebar {
     z-index: 1;
     border: 1px solid $darkenBrown;
     border-radius: $radius;
     background: $gold;
-    width: 251px;
+    width: 260px;
     height: 92.5vh;
     position: fixed;
-    top: 38px;
+    top: 50px;
     color: $white;
     .sidebar-content{
-      width: 75%;
+      width: 80%;
       margin: auto;
     }
 

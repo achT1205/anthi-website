@@ -42,6 +42,7 @@
 .triangle_new_withText {
   width: 90%;
   margin-left:20px;
+  margin-top:-20px;
 }
 
 .research-domain{

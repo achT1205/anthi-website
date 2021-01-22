@@ -1,6 +1,6 @@
 <template>
   <v-app> 
-    <Menu class="pt-1" />
+    <Menu class="pt-4" />
     <v-container class="pt-1">
       <v-row>
         <div class="page-content pt-1">
@@ -57,12 +57,12 @@ body .v-application .title{
 }
 .lastName {
   font-weight: 600; //Bold
-  font-size: 30px;
+  font-size: 27px;
 }
 
 .firtName {
   font-weight: 300; // Light
-  font-size: 28px;
+  font-size: 27px;
 }
 .she-her {
   font-size: 10px;
@@ -133,12 +133,13 @@ body .v-application .title{
 
 .custom-title {
   color: $darkenBrown;
-   font-weight: 600;
-  opacity: 0.5;
+   font-weight: 500;
+  opacity: 1;
   font-size: 22px;
   margin-top:20px;
   margin-left:50px;
 }
+
 .custom-sub-title {
   color: $darkenBrown;
   font-weight: 500;
@@ -153,7 +154,7 @@ body .v-application .title{
 }
 
 .department-text{
-  font-size: 11px;
+  font-size: 10px;
 }
 .views{
   //color: rgba(0, 0, 0, 0.87);
@@ -184,7 +185,7 @@ body .v-application .title{
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1250px;
 }
 
 </style>

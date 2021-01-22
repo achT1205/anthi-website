@@ -75,7 +75,7 @@ header {
     border-radius: $radius;
     padding-left: 8px;
     padding-right: 8px;
-    margin-right:18px;
+    margin-right:27px;
     height:38px;
     
   }
