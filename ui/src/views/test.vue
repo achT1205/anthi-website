@@ -181,7 +181,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 .lastName {
   font-weight: bold;
@@ -197,7 +197,8 @@ export default {
   margin-right: 61px;
 }
 .profile-card {
-  background-color: #b7a99a;
+  //background-color: 99a#b7a;
+  background-color: #C68D3C;
   color: white !important;
 }
 
@@ -207,7 +208,8 @@ export default {
   border-width: 1.5px !important;
   border-color: #504538 !important;
   border-radius: 6px 6px;
-  background-color: #b7a99a;
+  //background-color: #b7a99a;
+  background-color: #C68D3C;
   color: white !important;
   margin-top: 0px !important;
 }
@@ -231,7 +233,8 @@ a:link {
   height: 60px !important;
   width: 150px !important;
   border: none;
-  color: #b7a99a !important;
+  /*color: #b7a99a !important;*/
+  color: #C68D3C;
   font-size: 24px !important;
 }
 
