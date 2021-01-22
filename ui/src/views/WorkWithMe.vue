@@ -117,7 +117,7 @@ export default {
 .job-ad-subtitle{
   color: $gold;
   font-weight: 400;
-  opacity: 100%;
+  opacity: 99%;
   font-size: 19px;
   margin-top:20px;
 

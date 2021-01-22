@@ -150,7 +150,7 @@ margin-left: -28px;
   }
 
   .demphasize{
-    opacity:50%;
+    opacity:60%;
     color:$darkenBrown;
 
   }
