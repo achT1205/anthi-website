@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700;900&display=swap');
+
+$white: #ffffff;
+$darkenBrown: #504538;
+$lightenGray: #B7A99A;
+$gold: #C48D3B;
+$fontFamily: 'Source Sans Pro', sans-serif;
+$fontSize: 14px;
+$black: #000000;
+$radius: 6px;
+$navTabs: 298px;
+
+h1,h2,h3,h4,h5,h6{
+  font-weight: 700;
+}
+.v-tabs-slider,.v-tabs-slider-wrapper{
+  display: none;
+}
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}

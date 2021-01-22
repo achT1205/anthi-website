@@ -26,6 +26,12 @@ const routes = [
     name: 'WorkWithMe',
     component: () => import("@/views/WorkWithMe.vue"),
   },
+
+  {
+    path: '/publications',
+    name: 'Publications',
+    component: () => import("@/views/Publications.vue"),
+  },
 ];
 
 const router = new VueRouter({
