@@ -10,7 +10,7 @@
         </div>
       <div class="d-flex flex-no-wrap justify-start bl-1">
         
-        <v-avatar class="ma-3 mt-5" size="125" tile>
+        <v-avatar class="ma-0 mt-5" size="125" tile>
           <v-icon class="card-icon">fas fa-info</v-icon>
         </v-avatar>
         <div>
@@ -20,22 +20,38 @@
               I am an Assistant Professor of Computer Science at 
               <a class="discrete-link"  href="https://www.uu.nl/staff/EDimara" target="_blank"> Utrecht University </a>, 
               <a class="discrete-link" href="https://vig.science.uu.nl/" target="_blank"> VIG team</a>.  
-              My fields of research are  <a class="mr-5 discrete-link" href="https://en.wikipedia.org/wiki/Information_visualization" target="_blank"> Information Visualization </a> and <a class="discrete-link" href="https://en.wikipedia.org/wiki/Human%E2%80%93computer_interaction" target="_blank"> Human-Computer Interaction </a>.
+              My fields of research are  
+              <a class="discrete-link" href="https://en.wikipedia.org/wiki/Information_visualization" target="_blank"> Information Visualization </a> 
+              and 
+              <a class="discrete-link" href="https://en.wikipedia.org/wiki/Human%E2%80%93computer_interaction" target="_blank"> Human-Computer Interaction </a>.
                I study
               <strong class="link-1">decision making</strong> -- how
               technology can help people to make unbiased and informed decisions
               alone or in groups. I am especially interested in the kinds of
               decisions for which the current decision-support systems, models
-              and people's heuristics tend to fail. <span> <a text @click="reveal = true" class="more-information-mi">
-               [more information >> ] </a>   </span>           
+              and people's heuristics tend to fail. 
+              <span>  
+             <router-link to="/research" class="more-information-mi">
+              [ more information >> ] 
+              </router-link>
+              </span>  
+              
+              <!-- <a @click="redirectToResearch" class="more-information-mi">
+              [more information >> ] </a> -->
+                
             </div>
           
                
            
           <br/>
             <div class="mt-3">
-              I am recruiting PhD students.  <span> <a text @click="reveal = true" class="more-information-mi">
-                [more information >> ] </a> </span>    
+              I am recruiting PhD students.  
+              <span> 
+              <router-link to="/work-with-me" class="more-information-mi">
+              [ more information >> ] 
+              </router-link>
+                
+                </span>    
           
             </div>
           </v-card-text>
@@ -45,7 +61,7 @@
 
     <v-card elevation="0" class="mt-10">
       <div class="d-flex flex-no-wrap justify-start bl-1">
-        <v-avatar class="ma-3 mt-10" size="125" tile>
+        <v-avatar class="ma-0 mt-10" size="125" tile>
           <v-icon class="card-icon">fas fa-university</v-icon>
         </v-avatar>
         <div>
@@ -99,15 +115,23 @@
     </v-card>
   </div>
 </template>
+
 <script>
+
 export default {
   name: "Home",
   data() {
     return {};
   },
   components: {},
+  methods:{
+  redirectToResearch(){
+    this.$router.push('/research')
+  }
+  }
 };
 </script>
+
 <style lang="scss" scoped>
 
 .more-information {
@@ -120,14 +144,15 @@ export default {
 }
 
 .tv-preview{
-width: 25%;
+  width: 25%;
 }
+
 .more-information-mi {
   background-color: transparent;
   text-decoration: none;
   //float: left;
-  margin-left: 30px;
-  opacity: 0.7;
+  margin-left: 5px;
+  opacity: 0.6;
 }
 .card-icon {
   color: $darkenBrown;
@@ -136,19 +161,18 @@ width: 25%;
 }
 
 .tablecolumns-11{
-margin-left: -28px;
-    margin-top: -9px;
-    }
+  margin-left: -28px;
+  margin-top: -9px;
+}
 
-  .phdadvisors {
-     margin-top: -11px;
-  }
+.phdadvisors {
+  margin-top: -11px;
+}
 
-  .demphasize{
-    opacity:0.6;
-    color:$darkenBrown;
-
-  }
+.demphasize{
+  opacity:0.6;
+  color:$darkenBrown;
+}
 
 .home{
   font-weight: 300;
@@ -162,6 +186,7 @@ margin-left: -28px;
 .recruiting-phd-students {
   width: 281px;
 }
+
 @media (min-width: 0px){
   .bl-1{
     flex-direction: column;
