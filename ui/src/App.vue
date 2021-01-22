@@ -134,7 +134,7 @@ body .v-application .title{
 .custom-title {
   color: $darkenBrown;
    font-weight: 600;
-  opacity: 50%;
+  opacity: 0.5;
   font-size: 22px;
   margin-top:20px;
   margin-left:50px;
