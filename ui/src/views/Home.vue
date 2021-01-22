@@ -15,7 +15,7 @@
         </v-avatar>
         <div>
         
-          <v-card-text>
+          <v-card-text class="home">
             <div>
               I am an Assistant Professor of Computer Science at 
               <a class="discrete-link"  href="https://www.uu.nl/staff/EDimara" target="_blank"> Utrecht University </a>, 
@@ -49,7 +49,7 @@
           <v-icon class="card-icon">fas fa-university</v-icon>
         </v-avatar>
         <div>
-          <v-card-text>
+          <v-card-text class="home">
             <div>
               <span class="mr-3">2021</span> Assistant Professor at <a href="https://www.uu.nl/staff/EDimara" target="_blank"> Utrecht University</a>,
               <a href="https://vig.science.uu.nl/" target="_blank">  A. Telea’s visualization team</a>, Netherlands.
@@ -149,6 +149,12 @@ margin-left: -28px;
     color:$darkenBrown;
 
   }
+
+.home{
+  font-weight: 300;
+  font-size: 17px;
+  padding-left:30px;
+}
 
 .bl-1{
   flex-direction: row;
