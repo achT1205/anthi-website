@@ -10,7 +10,7 @@
         </div>
       <div class="d-flex flex-no-wrap justify-start bl-1">
         
-        <v-avatar class="ma-3 mt-10" size="125" tile>
+        <v-avatar class="ma-3 mt-5" size="125" tile>
           <v-icon class="card-icon">fas fa-info</v-icon>
         </v-avatar>
         <div>
@@ -26,22 +26,17 @@
               technology can help people to make unbiased and informed decisions
               alone or in groups. I am especially interested in the kinds of
               decisions for which the current decision-support systems, models
-              and people's heuristics tend to fail.
-              <br />
-             <a text @click="reveal = true" class="more-information-mi">
-                more information >>
-              </a>              
+              and people's heuristics tend to fail. <span> <a text @click="reveal = true" class="more-information-mi">
+               [more information >> ] </a>   </span>           
             </div>
           
                
            
           <br/>
             <div class="mt-3">
-              I am recruiting PhD students.
-              <br />
-              <a text @click="reveal = true" class="more-information-mi">
-                more information >>
-              </a>
+              I am recruiting PhD students.  <span> <a text @click="reveal = true" class="more-information-mi">
+                [more information >> ] </a> </span>    
+          
             </div>
           </v-card-text>
         </div>
@@ -130,8 +125,8 @@ width: 25%;
 .more-information-mi {
   background-color: transparent;
   text-decoration: none;
-  float: left;
-  margin-left: 0px;
+  //float: left;
+  margin-left: 30px;
   opacity: 0.7;
 }
 .card-icon {
