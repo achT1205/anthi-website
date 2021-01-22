@@ -99,7 +99,7 @@
     width: 251px;
     height: 92.5vh;
     position: fixed;
-    top: 47px;
+    top: 38px;
     color: $white;
     .sidebar-content{
       width: 75%;

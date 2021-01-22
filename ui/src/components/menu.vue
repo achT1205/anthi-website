@@ -24,7 +24,7 @@
         :key="index"
         :link="true"
         >
-        <router-link :to="item.link" :title="item.title" >
+        <router-link :to="item.link" :title="item.title">
           {{item.title}}
         </router-link>
         </li>
@@ -39,21 +39,22 @@ export default {
     showNav: false,
     items: [
       {
-        title: 'Home',
+        title: 'home',
         link: '/home'
       },
       {
-        title: 'Research',
+        title: 'research',
         link: '/research'
       },
       {
-        title: 'Work with me',
+        title: 'work with me',
         link: '/work-with-me'
       },
-      {
+
+       {
         title: 'publications',
         link: '/publications'
-      }
+      },
     ]
   })
 }
@@ -69,11 +70,14 @@ header {
   z-index: 1;
   .item-link.v-tab.v-tab{
     color: $lightenGray;
-    font-weight: 600;  // semibold
+    font-weight: 400; // regulrar
     font-size: $menuFontSize;
     border-radius: $radius;
-    padding-left: 11.5px;
-    padding-right: 11.5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-right:18px;
+    height:38px;
+    
   }
   .item-link.v-tab.v-tab.v-tab--active{
     background: $gold;
@@ -83,6 +87,15 @@ header {
 }
 .theme--light.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active), .theme--light.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active) > .v-icon, .theme--light.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active) > .v-btn, .theme--light.v-tabs > .v-tabs-bar .v-tab--disabled{
   color: $gold;
+}
+
+// .item-link.v-tab{
+
+//   margin-right:50px;
+// }
+
+.menu-links-box{
+  color:red;
 }
 .menu-mobile{
   display: none;

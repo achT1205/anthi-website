@@ -18,9 +18,9 @@
           <v-card-text>
             <div>
               I am an Assistant Professor of Computer Science at 
-              <a href="https://www.uu.nl/staff/EDimara" target="_blank"> Utrecht University </a>, 
+              <a class="discrete-link"  href="https://www.uu.nl/staff/EDimara" target="_blank"> Utrecht University </a>, 
               <a class="discrete-link" href="https://vig.science.uu.nl/" target="_blank"> VIG team</a>.  
-              I specialize in  <a class="mr-5 discrete-link" href="https://en.wikipedia.org/wiki/Information_visualization" target="_blank"> Information Visualization </a> & <a class="discrete-link" href="https://en.wikipedia.org/wiki/Human%E2%80%93computer_interaction" target="_blank"> Human-Computer Interaction </a>.
+              My fields of research are  <a class="mr-5 discrete-link" href="https://en.wikipedia.org/wiki/Information_visualization" target="_blank"> Information Visualization </a> & <a class="discrete-link" href="https://en.wikipedia.org/wiki/Human%E2%80%93computer_interaction" target="_blank"> Human-Computer Interaction </a>.
             </div>
 
             <div class="mt-3">

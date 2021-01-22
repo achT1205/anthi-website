@@ -4,8 +4,8 @@
     <v-container class="pt-1">
       <v-row>
         <div class="page-content pt-1">
-          <div class="content pt-3">
-            <Sidebar class="pt-3" />
+          <div class="content pt-4">
+            <Sidebar class="pt-4" />
             <div class="views pt-13">
               <router-view></router-view>
             </div>
