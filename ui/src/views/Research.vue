@@ -41,7 +41,7 @@
 <style scoped>
 .triangle_new_withText {
   width: 90%;
-  margin-left:40px;
+  margin-left:20px;
 }
 
 .research-domain{
