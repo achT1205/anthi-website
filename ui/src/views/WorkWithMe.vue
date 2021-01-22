@@ -1,6 +1,5 @@
 <template>
   <div class="page work-with-me">
-LALALA
 
       I am hiring graduate students for a fully funded 5-year <span class="give-emphasis"> Ph.D.</span> position 
       at Utrecht University in the area of interactive <span class="give-emphasis"> information visualization</span>, 
@@ -117,7 +116,7 @@ export default {
 .job-ad-subtitle{
   color: $gold;
   font-weight: 400;
-  opacity: 99%;
+  opacity: 1;
   font-size: 19px;
   margin-top:20px;
 

@@ -121,7 +121,7 @@ export default {
   text-decoration: none;
   float: left;
   margin-left: 0px;
-  opacity: 50%;
+  opacity: 0.6;
 }
 
 .tv-preview{
@@ -132,11 +132,11 @@ width: 25%;
   text-decoration: none;
   float: left;
   margin-left: 0px;
-  opacity: 60%;
+  opacity: 0.7;
 }
 .card-icon {
   color: $darkenBrown;
-  opacity:40%;
+  opacity:0.5;
   font-size: 65px;
 }
 
@@ -150,7 +150,7 @@ margin-left: -28px;
   }
 
   .demphasize{
-    opacity:60%;
+    opacity:0.6;
     color:$darkenBrown;
 
   }
