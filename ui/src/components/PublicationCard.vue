@@ -96,7 +96,7 @@ export default {
 }
 
 .pub-icons{
-      opacity:60%;
+      opacity:0.6;
 }
 @media (max-width: 500px){
   .v-list--three-line .v-list-item, .v-list-item--three-line{
