@@ -50,6 +50,10 @@ export default {
         title: 'Work with me',
         link: '/work-with-me'
       },
+      {
+        title: 'publications',
+        link: '/publications'
+      }
     ]
   })
 }
