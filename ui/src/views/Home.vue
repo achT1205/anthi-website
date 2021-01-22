@@ -20,11 +20,8 @@
               I am an Assistant Professor of Computer Science at 
               <a class="discrete-link"  href="https://www.uu.nl/staff/EDimara" target="_blank"> Utrecht University </a>, 
               <a class="discrete-link" href="https://vig.science.uu.nl/" target="_blank"> VIG team</a>.  
-              My fields of research are  <a class="mr-5 discrete-link" href="https://en.wikipedia.org/wiki/Information_visualization" target="_blank"> Information Visualization </a> & <a class="discrete-link" href="https://en.wikipedia.org/wiki/Human%E2%80%93computer_interaction" target="_blank"> Human-Computer Interaction </a>.
-            </div>
-
-            <div class="mt-3">
-              I study
+              My fields of research are  <a class="mr-5 discrete-link" href="https://en.wikipedia.org/wiki/Information_visualization" target="_blank"> Information Visualization </a> and <a class="discrete-link" href="https://en.wikipedia.org/wiki/Human%E2%80%93computer_interaction" target="_blank"> Human-Computer Interaction </a>.
+               I study
               <strong class="link-1">decision making</strong> -- how
               technology can help people to make unbiased and informed decisions
               alone or in groups. I am especially interested in the kinds of
@@ -33,8 +30,11 @@
               <br />
              <a text @click="reveal = true" class="more-information-mi">
                 more information >>
-              </a>    
-            </div>  
+              </a>              
+            </div>
+          
+               
+           
           <br/>
             <div class="mt-3">
               I am recruiting PhD students.
