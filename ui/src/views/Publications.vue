@@ -21,9 +21,7 @@
       <v-text-field
         v-model="search"
         label="Search Publications by keyword"
-        dark
         flat
-        solo-inverted
         hide-details
         clearable
         clear-icon="mdi-close-circle-outline"

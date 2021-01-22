@@ -148,9 +148,10 @@ body .v-application .title{
 }
 
 .search-publications {
-  background-color:$darkenBrown;
-  opacity: 0.5;
+  caret-color:$darkenBrown;
   margin-left:50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .department-text{
