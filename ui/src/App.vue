@@ -143,13 +143,13 @@ body .v-application .title{
 .custom-sub-title {
   color: $darkenBrown;
   font-weight: 500;
-  opacity: 50%;
+  opacity: 0.5;
   font-size: 15px;
 }
 
 .search-publications {
   background-color:$darkenBrown;
-  opacity: 50%;
+  opacity: 0.5;
   margin-left:50px;
 }
 
