@@ -61,11 +61,11 @@
             </div>
             <div>
               <span class="mr-3">2020</span> PostDoc at University of Konstanz,
-              <a href="https://www.vis.uni-konstanz.de/" target="_blank"> D. Keim’s visual analytics team </a>, Germany.
+              <a href="https://www.vis.uni-konstanz.de/" target="_blank"> D. Keim’s visual analytics team</a>, Germany.
             </div>
             <div>
               <span class="mr-3">2019</span> PostDoc at Sorbonne University, 
-              <a href="https://hci.isir.upmc.fr/" target="_blank">G. Bailly’s HCI team </a>, France.
+              <a href="https://hci.isir.upmc.fr/" target="_blank">G. Bailly’s HCI team</a>, France.
             </div>
             <div>
           

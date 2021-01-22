@@ -8,7 +8,7 @@
           <v-col cols="12">
             <img
             class="triangle_new_withText"
-              src="@/assets/images/triangle_new_withText-01.png"
+              src="@/assets/images/pyramide_oldwebiste-01.png"
               alt="pyramide research interests"
             />
           </v-col>
@@ -16,14 +16,16 @@
       </div>
     </v-card>
     <h2 class="custom-title">Selected Publications</h2>
-<publication-card 
-v-for="publication in publications.filter(
-        (p) => p.gsx$isaselectedpublication.$t === '1'
-      )"
-      :key="'_'+publication.gsx$paperid.$t"
-:publication="publication"/>
+    <div class="pub-all-list">
 
+        <publication-card 
+        v-for="publication in publications.filter(
+                (p) => p.gsx$isaselectedpublication.$t === '1'
+              )"
+              :key="'_'+publication.gsx$paperid.$t"
+        :publication="publication"/>
 
+    </div>
   
     <h2 class="custom-title">All Publications</h2>
 
@@ -46,11 +48,12 @@ v-for="publication in publications.filter(
       ></v-text-field>
     </v-flex>
 
-<publication-card 
-v-for="publication in filteredPublications"
-      :key="publication.gsx$paperid.$t"
-:publication="publication"/>
-
+<div class="pub-all-list">
+  <publication-card 
+  v-for="publication in filteredPublications"
+        :key="publication.gsx$paperid.$t"
+  :publication="publication"/>
+</div>
   </div>
 </template>
 
@@ -94,11 +97,17 @@ export default {
 <style scoped>
 .triangle_new_withText {
   width: 100%;
+  margin-left:40px;
 }
 
 
 .img-fluid{
   max-width: 100%;
+
+}
+
+.pub-all-list{
+  margin-left:25px;
 }
 
 </style>

@@ -133,16 +133,23 @@ body .v-application .title{
 
 .custom-title {
   color: $darkenBrown;
-  font-weight: 500;
+   font-weight: 600;
+  opacity: 50%;
+  font-size: 22px;
+  margin-top:20px;
+  margin-left:50px;
 }
 .custom-sub-title {
   color: $darkenBrown;
-  font-weight: 700;
+  font-weight: 500;
+  opacity: 50%;
+  font-size: 15px;
 }
 
 .search-publications {
-  background-color:lightgray;
+  background-color:$darkenBrown;
   opacity: 50%;
+  margin-left:50px;
 }
 
 .department-text{

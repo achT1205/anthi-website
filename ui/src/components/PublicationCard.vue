@@ -12,41 +12,39 @@
         />
       </v-list-item-avatar>
       <v-list-item-content>
-        <div>{{ publication.gsx$authors.$t }}</div>
-        <div class="title">
-          {{ publication.gsx$title.$t }}
-        </div>
-        <v-list-item-subtitle>{{
-          publication.gsx$venue.$t
-        }}</v-list-item-subtitle>
+        <div class="pub-authors">   {{ publication.gsx$authors.$t }}</div>
+        <div class="pub-title">     {{ publication.gsx$title.$t }} </div>
+        <div class="pub-venue">    {{ publication.gsx$venue.$t}} </div>
+        <div class="pub-icons">
+
         <v-row align="center" justify="start" class="ml-1">
-          <v-icon small @click.prevent="">fas fa-copy</v-icon>
-          <div class="mx-2"></div>
-          <a :href="publication.gsx$paperpdf.$t" target="_blank">
-            <v-icon small>fas fa-file-pdf</v-icon>
-          </a>
-          <div class="mx-2"></div>
-          <a :href="publication.gsx$suppementarymaterial.$t" target="_blank">
-          <v-icon small>fas fa-cog</v-icon>
-         </a>
-        <div class="mx-2"></div>
+            <v-icon small @click.prevent="">fas fa-copy </v-icon>
+            <div class="mx-2"></div>
+            <a :href="publication.gsx$paperpdf.$t" target="_blank">
+                <v-icon small>fas fa-file-pdf</v-icon>
+            </a>
+            <div class="mx-2"></div>
+            <a :href="publication.gsx$suppementarymaterial.$t" target="_blank">
+                <v-icon small>fas fa-cog</v-icon>
+            </a>
+            <div class="mx-2"></div>
             <a :href="publication.gsx$bibtex.$t" target="_blank">    
                 <img
                     src="@/assets/icons/nounproject_TEX File_342079.svg"
                     alt="BibTex"
-                    height="15"
+                    height="17"
                     class="lecturer"
                 />
             </a>
-          <div class="mx-2"></div>
+            <div class="mx-2"></div>
             <a :href="publication.gsx$shortpreviewvideo.$t" target="_blank">    
                 <v-icon small>fas fa-film</v-icon>
             </a>
-          <div class="mx-2"></div>
+            <div class="mx-2"></div>
             <a :href="publication.gsx$presentationslides.$t" target="_blank">    
                 <v-icon small>mdi-presentation</v-icon>
             </a>
-          <div class="mx-1"></div>
+            <div class="mx-1"></div>
             <a :href="publication.gsx$presentationvideo.$t" target="_blank">    
                 <img
                     src="@/assets/icons/nounproject_Lecturer_8076.svg"
@@ -56,6 +54,7 @@
                 />
             </a>
         </v-row>
+        </div>
       </v-list-item-content>
     </v-list-item>
   </v-card>
@@ -78,9 +77,26 @@ export default {
 }
 
 .avatars{
-  width: 150px!important;
-  max-width: 150px!important;
+  width: 250px!important;
+  max-width: 250px!important;
   height: auto!important;
+}
+
+.pub-authors{
+    padding-top: 8px;
+    font-size: 17px; 
+}
+
+.pub-title{
+      font-size: 17px; 
+}
+
+.pub-venue{
+      font-size: 17px; 
+}
+
+.pub-icons{
+      opacity:60%;
 }
 @media (max-width: 500px){
   .v-list--three-line .v-list-item, .v-list-item--three-line{
