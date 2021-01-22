@@ -1,13 +1,13 @@
 <template>
-  <div class="home">
-    <v-card elevation="0">
-       <div class="d-flex justify-center">
+  <div class="home1">
+           <div class="d-flex justify-center">
          <img
             class="tv-preview"
               src="@/assets/images/tv-placeholder.png"
               alt="papers-preview"
             />
         </div>
+    <v-card elevation="0">
       <div class="d-flex flex-no-wrap justify-start bl-1">
         
         <v-avatar class="ma-0 mt-5" size="125" tile>
@@ -40,11 +40,8 @@
               [more information >> ] </a> -->
                 
             </div>
-          
-               
-           
-          <br/>
-            <div class="mt-3">
+      
+            <div class="mt-4">
               I am recruiting PhD students.  
               <span> 
               <router-link to="/work-with-me" class="more-information-mi">
@@ -174,11 +171,18 @@ export default {
   color:$darkenBrown;
 }
 
-.home{
+.home1{
   font-weight: 300;
   font-size: 17px;
   padding-left:30px;
 }
+
+.home{
+  font-weight: 300;
+  font-size: 17px;
+  margin-left: -13px;
+}
+
 
 .bl-1{
   flex-direction: row;

@@ -1,5 +1,5 @@
 <template>
-  <v-card class="mx-auto" elevation="0" >
+  <v-card class="mx-auto" elevation="0">
     <v-list-item three-line>
       <v-list-item-avatar tile class="avatars">
         <img
@@ -12,102 +12,174 @@
         />
       </v-list-item-avatar>
       <v-list-item-content>
-        <div class="pub-authors">   {{ publication.gsx$authors.$t }}</div>
-        <div class="pub-title">     {{ publication.gsx$title.$t }} </div>
-        <div class="pub-venue">    {{ publication.gsx$venue.$t}} </div>
+        <div class="pub-authors">{{ publication.gsx$authors.$t }}</div>
+        <div class="pub-title">{{ publication.gsx$title.$t }}</div>
+        <div class="pub-venue">{{ publication.gsx$venue.$t }}</div>
         <div class="pub-icons">
+          <v-row align="center" justify="start" class="ml-1">
+            <v-tooltip bottom content-class="yourclass">
+              <template v-slot:activator="{ on, attrs }">
+                <v-icon
+                  v-bind="attrs"
+                  v-on="on"
+                  medium
+                  @click.prevent="
+                    copyToClipboard(publication.gsx$copycitation.$t)
+                  "
+                  >fas fa-copy
+                </v-icon>
+              </template>
+              <span>Copy the citation</span>
+            </v-tooltip>
 
-        <v-row align="center" justify="start" class="ml-1">
-            <v-icon small @click.prevent="">fas fa-copy </v-icon>
-            <div class="mx-2"></div>
-            <a :href="publication.gsx$paperpdf.$t" target="_blank">
-                <v-icon small>fas fa-file-pdf</v-icon>
+            <a class="ml-2" :href="publication.gsx$paperpdf.$t" target="_blank">
+              <v-icon medium>fas fa-file-pdf</v-icon>
             </a>
-            <div class="mx-2"></div>
-            <a :href="publication.gsx$suppementarymaterial.$t" target="_blank">
-                <v-icon small>fas fa-cog</v-icon>
+
+            <a
+              class="ml-2"
+              :href="publication.gsx$suppementarymaterial.$t"
+              target="_blank"
+            >
+              <v-icon medium>fas fa-cog</v-icon>
             </a>
-            <div class="mx-2"></div>
-            <a :href="publication.gsx$bibtex.$t" target="_blank">    
-                <img
-                    src="@/assets/icons/nounproject_TEX File_342079.svg"
-                    alt="BibTex"
-                    height="17"
-                    class="lecturer"
-                />
+
+            <a
+              class="ml-1 lecturer"
+              :href="publication.gsx$bibtex.$t"
+              target="_blank"
+            >
+              <img
+                src="@/assets/icons/nounproject_TEX File_342079.svg"
+                alt="BibTex"
+              />
             </a>
-            <div class="mx-2"></div>
-            <a :href="publication.gsx$shortpreviewvideo.$t" target="_blank">    
-                <v-icon small>fas fa-film</v-icon>
+            <a
+              class="ml-2"
+              :href="publication.gsx$shortpreviewvideo.$t"
+              target="_blank"
+            >
+              <v-icon medium>fas fa-film</v-icon>
             </a>
-            <div class="mx-2"></div>
-            <a :href="publication.gsx$presentationslides.$t" target="_blank">    
-                <v-icon small>mdi-presentation</v-icon>
+            <a
+              class="ml-2"
+              :href="publication.gsx$presentationslides.$t"
+              target="_blank"
+            >
+              <v-icon medium>mdi-presentation</v-icon>
             </a>
-            <div class="mx-1"></div>
-            <a :href="publication.gsx$presentationvideo.$t" target="_blank">    
-                <img
-                    src="@/assets/icons/nounproject_Lecturer_8076.svg"
-                    alt="Lecturer"
-                    height="15"
-                    class="lecturer"
-                />
+            <a
+              class="ml-1 lecturer"
+              :href="publication.gsx$presentationvideo.$t"
+              target="_blank"
+            >
+              <img
+                src="@/assets/icons/nounproject_Lecturer_8076.svg"
+                alt="Lecturer"
+              />
             </a>
-        </v-row>
+          </v-row>
         </div>
       </v-list-item-content>
     </v-list-item>
+    <v-snackbar
+      v-model="snackbar"
+      :timeout="timeout"
+      top
+      right
+      content-class="myclass"
+    >
+      {{ snackbarText }}
+
+      <template v-slot:action="{ attrs }">
+        <v-btn color="pink" text v-bind="attrs" @click="snackbar = false">
+          Close
+        </v-btn>
+      </template>
+    </v-snackbar>
   </v-card>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      snackbar: false,
+      snackbarText: "",
+      timeout: 1500,
+    };
+  },
   props: ["publication"],
+  methods: {
+    copyToClipboard(text) {
+      const el = document.createElement("textarea");
+      el.value = text;
+      document.body.appendChild(el);
+      el.select();
+      document.execCommand("copy");
+      document.body.removeChild(el);
+      this.snackbarText = "Citation copied";
+      this.snackbar = true;
+    },
+  },
 };
 </script>
 
 <style scoped>
-
-.lecturer {
-  margin-top: -5px;
+.yourclass {
+  color: white;
+  background-color: red;
 }
 
-.img-fluid{
+.myclass {
+  color: white;
+  background-color: red;
+}
+
+.lecturer img {
+  height: 24px;
+}
+
+.lecturer {
+  margin-top: 1px;
+}
+
+.img-fluid {
   max-width: 100%;
 }
 
-.avatars{
-  width: 250px!important;
-  max-width: 250px!important;
-  height: auto!important;
+.avatars {
+  width: 250px !important;
+  max-width: 250px !important;
+  height: auto !important;
 }
 
-.pub-authors{
-    padding-top: 8px;
-    font-size: 17px; 
+.pub-authors {
+  padding-top: 8px;
+  font-size: 17px;
 }
 
-.pub-title{
-      font-size: 17px; 
+.pub-title {
+  font-size: 17px;
 }
 
-.pub-venue{
-      font-size: 17px; 
+.pub-venue {
+  font-size: 17px;
 }
 
-.pub-icons{
-      opacity:0.6;
+.pub-icons {
+  opacity: 0.6;
 }
-@media (max-width: 500px){
-  .v-list--three-line .v-list-item, .v-list-item--three-line{
+@media (max-width: 500px) {
+  .v-list--three-line .v-list-item,
+  .v-list-item--three-line {
     display: flex;
     flex-direction: column;
   }
-  .avatars{
-    width: 100%!important;
-    max-width: 100%!important;
-    height: auto!important;
+  .avatars {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
   }
 }
-
 </style>
