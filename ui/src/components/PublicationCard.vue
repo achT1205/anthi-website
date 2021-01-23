@@ -12,37 +12,49 @@
         />
       </v-list-item-avatar>
       <v-list-item-content>
-        <div class="pub-authors">{{ publication.gsx$authors.$t }}</div>
-        <div class="pub-title">{{ publication.gsx$title.$t }}</div>
-        <div class="pub-venue">{{ publication.gsx$venue.$t }}</div>
+        <div class="pub-authors"> {{ publication.gsx$authors.$t }}  </div>
+        <div class="pub-title">   {{ publication.gsx$title.$t }}    </div>
+        <div class="pub-venue">   {{ publication.gsx$venue.$t }}    </div>
         <div class="pub-icons">
           <v-row align="center" justify="start" class="ml-1">
-            <v-tooltip bottom content-class="yourclass">
+
+            <v-tooltip bottom  content-class="pub-icon-tooltip"> 
               <template v-slot:activator="{ on, attrs }">
                 <v-icon
                   v-bind="attrs"
                   v-on="on"
                   medium
-                  @click.prevent="
-                    copyToClipboard(publication.gsx$copycitation.$t)
-                  "
+                  @click.prevent="copyToClipboard(publication.gsx$copycitation.$t)"
                   >fas fa-copy
-                </v-icon>
+              </v-icon>
+
               </template>
-              <span>Copy the citation</span>
+              <span>copy the citation</span>
             </v-tooltip>
 
-            <a class="ml-2" :href="publication.gsx$paperpdf.$t" target="_blank">
-              <v-icon medium>fas fa-file-pdf</v-icon>
-            </a>
 
+
+       <v-tooltip bottom  content-class="pub-icon-tooltip"> 
+          <template v-slot:activator="{ on, attrs }">
+            <a class="ml-2" :href="publication.gsx$paperpdf.$t" target="_blank">
+              <v-icon  v-bind="attrs" v-on="on" medium>fas fa-file-pdf</v-icon>
+            </a>
+          </template>
+          <span>PDF</span>
+      </v-tooltip>
+
+       <v-tooltip bottom  content-class="pub-icon-tooltip"> 
+          <template v-slot:activator="{ on, attrs }">
             <a
               class="ml-2"
               :href="publication.gsx$suppementarymaterial.$t"
               target="_blank"
             >
-              <v-icon medium>fas fa-cog</v-icon>
+              <v-icon  v-bind="attrs" v-on="on" medium>fas fa-cog</v-icon>
             </a>
+               </template>
+          <span>supplementary material</span>
+      </v-tooltip>
 
             <a
               class="ml-1 lecturer"
@@ -125,10 +137,13 @@ export default {
 };
 </script>
 
-<style scoped>
-.yourclass {
-  color: white;
-  background-color: red;
+<style lang="scss"  scoped>
+.pub-icon-tooltip {
+  color: $darkenBrown;
+  background-color: white;
+  margin-top:-7px;
+  max-width:"10px" ;
+  
 }
 
 .myclass {

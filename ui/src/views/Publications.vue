@@ -1,21 +1,17 @@
 <template>
   <div class="page search">
-
     <h2 class="custom-title">Selected Publications</h2>
-    <div class="pub-all-list">
 
-        <publication-card 
+    <div class="pub-all-list">
+      <publication-card 
         v-for="publication in publications.filter(
                 (p) => p.gsx$isaselectedpublication.$t === '1'
               )"
               :key="'_'+publication.gsx$paperid.$t"
         :publication="publication"/>
-
     </div>
   
     <h2 class="custom-title">All Publications</h2>
-
-
 
     <v-flex class="search-publications">
       <v-text-field
