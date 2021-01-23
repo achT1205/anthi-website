@@ -185,8 +185,8 @@ export default {
 }
 
 .avatars {
-  width: 250px !important;
-  max-width: 250px !important;
+  width: 300px !important;
+  max-width: 300px !important;
   height: auto !important;
 }
 
