@@ -70,7 +70,7 @@
       </div>
   
     
-    <div class="d-flex mt-6 ml-0 contact-footer">
+    <div class="d-flex mt-15 ml-0 contact-footer">
       <h4>Mailing Address</h4>
       <a href="https://goo.gl/maps/Gjphw3XGb4rX3VhU8" target="_blank" class="ml-0">
         <v-icon small color="white">fas fa-search-location</v-icon>
