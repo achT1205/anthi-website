@@ -29,8 +29,12 @@
         </router-link>
         </li>
       </ul>
+      
     </nav>
+    <hr class ="menu-horizontal-line">
     </v-container>
+          
+
   </header>
 </template>
 <script>
@@ -76,7 +80,7 @@ header {
     padding-left: 8px;
     padding-right: 8px;
     margin-right:27px;
-    height:38px;
+    height:36px;
     
   }
   .item-link.v-tab.v-tab.v-tab--active{
@@ -87,6 +91,15 @@ header {
 }
 .theme--light.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active), .theme--light.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active) > .v-icon, .theme--light.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active) > .v-btn, .theme--light.v-tabs > .v-tabs-bar .v-tab--disabled{
   color: $gold;
+}
+
+.menu-horizontal-line{
+  opacity: 0.99;
+  background-color: $darkenBrown;
+  margin-top: -14px;
+  height: 2px;
+  color: $darkenBrown;
+  
 }
 
 // .item-link.v-tab{

@@ -1,7 +1,9 @@
 <template>
   <v-app> 
     <Menu class="pt-4" />
+  
     <v-container class="pt-1">
+        <hr>
       <v-row>
         <div class="page-content pt-1">
           <div class="content pt-4">
