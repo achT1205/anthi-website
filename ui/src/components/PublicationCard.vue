@@ -16,7 +16,7 @@
         <div class="pub-title">   {{ publication.gsx$title.$t }}    </div>
         <div class="pub-venue">   {{ publication.gsx$venue.$t }}    </div>
         <div class="pub-icons">
-          <v-row align="center" justify="start" class="ml-1">
+          <v-row align="center" justify="start" class="ml-1 mt-0">
 
             <v-tooltip bottom  content-class="pub-icon-tooltip"> 
               <template v-slot:activator="{ on, attrs }">
@@ -196,15 +196,19 @@ export default {
 
 .pub-authors {
   padding-top: 8px;
-  font-size: 17px;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 .pub-title {
-  font-size: 17px;
+  font-size: 18px;
+  font-weight: 400;
+
 }
 
 .pub-venue {
-  font-size: 17px;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 .pub-icons {
