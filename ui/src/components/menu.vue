@@ -72,7 +72,7 @@ header {
     color: $lightenGray;
     font-weight: 400; // regulrar
     font-size: $menuFontSize;
-    border-radius: $radius;
+    border-radius: $halfradius;
     padding-left: 8px;
     padding-right: 8px;
     margin-right:27px;

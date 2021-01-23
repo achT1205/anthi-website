@@ -94,7 +94,7 @@
   .sidebar {
     z-index: 1;
     border: 1px solid $darkenBrown;
-    border-radius: $radius;
+    border-radius: $mirrorhalfradius;
     background: $gold;
     width: 260px;
     height: 92.5vh;

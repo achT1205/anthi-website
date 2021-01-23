@@ -101,6 +101,7 @@ export default {
   },
 };
 </script>
+
 <style scoped>
 .triangle_new_withText {
   width: 100%;
