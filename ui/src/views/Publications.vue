@@ -3,14 +3,15 @@
     <h2 class="custom-title">Selected Publications</h2>
 
     <div class="pub-all-list">
-      <publication-card 
+      <publication-card
         v-for="publication in publications.filter(
-                (p) => p.gsx$isaselectedpublication.$t === '1'
-              )"
-              :key="'_'+publication.gsx$paperid.$t"
-        :publication="publication"/>
+          (p) => p.gsx$isaselectedpublication.$t === '1'
+        )"
+        :key="'_' + publication.gsx$paperid.$t"
+        :publication="publication"
+      />
     </div>
-  
+
     <h2 class="custom-title">All Publications</h2>
 
     <v-flex class="search-publications">
@@ -28,27 +29,42 @@
       ></v-text-field>
     </v-flex>
 
-<div class="pub-all-list">
-  <publication-card 
-  v-for="publication in filteredPublications"
+    <div class="pub-all-list">
+      <publication-card
+        v-for="publication in filteredPublications"
         :key="publication.gsx$paperid.$t"
-  :publication="publication"/>
-</div>
+        :publication="publication"
+      />
+    </div>
+    <v-btn
+      v-scroll="onScroll"
+      v-show="fab"
+      fab
+      dark
+      fixed
+      bottom
+      right
+      color="#C48D3B"
+      @click="toTop"
+    >
+      <v-icon>fas fa-angle-up</v-icon>
+    </v-btn>
   </div>
 </template>
 
 <script>
 import { mapGetters } from "vuex";
-import PublicationCard from '@/components/PublicationCard.vue'
+import PublicationCard from "@/components/PublicationCard.vue";
 export default {
   name: "Search",
   data() {
     return {
       search: null,
       filteredPublications: [],
+      fab: false,
     };
   },
-  components: {PublicationCard},
+  components: { PublicationCard },
   computed: {
     ...mapGetters(["publications"]),
   },
@@ -72,23 +88,30 @@ export default {
       }
     },
   },
+  methods: {
+    onScroll(e) {
+      if (typeof window === "undefined") return;
+      const top = window.pageYOffset || e.target.scrollTop || 0;
+      this.fab = top > 20;
+    },
+    toTop() {
+      this.$vuetify.goTo(0);
+    },
+  },
 };
 </script>
 <style scoped>
 .triangle_new_withText {
   width: 100%;
-  margin-left:40px;
+  margin-left: 40px;
 }
 
-
-.img-fluid{
+.img-fluid {
   max-width: 100%;
-
 }
 
-.pub-all-list{
-  margin-left:25px;
+.pub-all-list {
+  margin-left: 25px;
 }
-
 </style>
 
