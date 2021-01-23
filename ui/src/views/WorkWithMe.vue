@@ -20,7 +20,7 @@
       target="_blank"
       ><span class="give-emphasis"> Alex Telea </span>
     </a>
-    (<span class="give-emphasis"> by 10%</span>). The position involves
+    (<span class="give-emphasis">by 10%</span>). The position involves
     relocation to the beautiful and vibrant city of
     <a class="discrete-link" href="https://www.visit-utrecht.com/" target="_blank">
       Utrecht
