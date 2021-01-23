@@ -16,111 +16,106 @@
         <div class="pub-title">   {{ publication.gsx$title.$t }}    </div>
         <div class="pub-venue">   {{ publication.gsx$venue.$t }}    </div>
         <div class="pub-icons">
-          <v-row align="center" justify="start" class="ml-1 mt-0">
+      
+        <v-row align="center" justify="start" class="ml-1 mt-0">
 
             <v-tooltip bottom  content-class="pub-icon-tooltip"> 
               <template v-slot:activator="{ on, attrs }">
-                <v-icon
-                  v-bind="attrs"
-                  v-on="on"
-                  medium
-                  @click.prevent="copyToClipboard(publication.gsx$copycitation.$t)"
-                  >fas fa-copy
-              </v-icon>
-
+                  <v-icon
+                    v-bind="attrs"
+                    v-on="on"
+                    medium
+                    @click.prevent="copyToClipboard(publication.gsx$copycitation.$t, 'The citation is copied to your clipboard.')"
+                    >fas fa-copy
+                  </v-icon>
               </template>
               <span>copy citation</span>
             </v-tooltip>
 
+            <v-tooltip bottom  content-class="pub-icon-tooltip"> 
+                <template v-slot:activator="{ on, attrs }">
+                  <a
+                    class="ml-1 iconfromsvg"
+                    @click="copyToClipboard(publication.gsx$bibtex.$t, 'The bibtex code is copied to your clipboard.')"
+                    target="_blank"
+                  >
+                    <img v-bind="attrs" v-on="on"
+                      src="@/assets/icons/nounproject_TEX File_342079.svg"
+                      alt="BibTex"
+                    />
+                  </a>      
+                  </template>
+                <span>copy bibtex</span>
+            </v-tooltip>
 
-      <v-tooltip bottom  content-class="pub-icon-tooltip"> 
-          <template v-slot:activator="{ on, attrs }">
-            <a
-              class="ml-1 iconfromsvg"
-              :href="publication.gsx$bibtex.$t"
-              target="_blank"
-            >
-              <img v-bind="attrs" v-on="on"
-                src="@/assets/icons/nounproject_TEX File_342079.svg"
-                alt="BibTex"
-              />
-            </a>      
-            </template>
-          <span>copy bibtex</span>
-      </v-tooltip>
+            <v-tooltip bottom  content-class="pub-icon-tooltip"> 
+                <template v-slot:activator="{ on, attrs }">
+                  <a class="ml-2" :href="publication.gsx$paperpdf.$t" target="_blank">
+                    <v-icon  v-bind="attrs" v-on="on" medium>fas fa-file-pdf</v-icon>
+                  </a>
+                </template>
+                <span>download PDF</span>
+            </v-tooltip>         
+            <v-tooltip bottom  content-class="pub-icon-tooltip"> 
+                <template v-slot:activator="{ on, attrs }">
+                  <a
+                    class="ml-2"
+                    :href="publication.gsx$shortpreviewvideo.$t"
+                    target="_blank"
+                  >
+                    <v-icon v-bind="attrs" v-on="on" medium>fas fa-film</v-icon>
+                  </a> 
+                  </template>
+                <span>video preview</span>
+            </v-tooltip>
 
-       <v-tooltip bottom  content-class="pub-icon-tooltip"> 
-          <template v-slot:activator="{ on, attrs }">
-            <a class="ml-2" :href="publication.gsx$paperpdf.$t" target="_blank">
-              <v-icon  v-bind="attrs" v-on="on" medium>fas fa-file-pdf</v-icon>
-            </a>
-          </template>
-          <span>download PDF</span>
-      </v-tooltip>
-
-
-
-            
-      <v-tooltip bottom  content-class="pub-icon-tooltip"> 
-          <template v-slot:activator="{ on, attrs }">
-            <a
-              class="ml-2"
-              :href="publication.gsx$shortpreviewvideo.$t"
-              target="_blank"
-            >
-              <v-icon v-bind="attrs" v-on="on" medium>fas fa-film</v-icon>
-            </a> 
-            </template>
-          <span>video preview</span>
-      </v-tooltip>
-
-
-      <v-tooltip bottom  content-class="pub-icon-tooltip"> 
-          <template v-slot:activator="{ on, attrs }">
-            <a
-              class="ml-2"
-              :href="publication.gsx$suppementarymaterial.$t"
-              target="_blank"
-            >
-              <v-icon  v-bind="attrs" v-on="on" medium>fas fa-cog</v-icon>
-            </a>
-               </template>
-          <span>supplementary material</span>
-      </v-tooltip>
-            
-      <v-tooltip bottom  content-class="pub-icon-tooltip"> 
-          <template v-slot:activator="{ on, attrs }">
-           <a
-              class="ml-2"
-              :href="publication.gsx$presentationslides.$t"
-              target="_blank"
-            >           
-              <v-icon v-bind="attrs" v-on="on" medium>mdi-presentation</v-icon>
-            </a> 
-            </template>
-          <span>presenation slides</span>
-      </v-tooltip>
-          
-      <v-tooltip bottom  content-class="pub-icon-tooltip"> 
-          <template v-slot:activator="{ on, attrs }">
-            <a
-              class="ml-1 iconfromsvg"
-              :href="publication.gsx$presentationvideo.$t"
-              target="_blank"
-            >
-              <img v-bind="attrs" v-on="on"
-                 src="@/assets/icons/nounproject_Lecturer_8076.svg"
-                alt="Lecturer"
-              />
-            </a>      
-            </template>
-          <span>live presentation</span>
-      </v-tooltip>
-
+            <v-tooltip bottom  content-class="pub-icon-tooltip"> 
+                <template v-slot:activator="{ on, attrs }">
+                  <a
+                    class="ml-2"
+                    :href="publication.gsx$suppementarymaterial.$t"
+                    target="_blank"
+                  >
+                    <v-icon  v-bind="attrs" v-on="on" medium>fas fa-cog</v-icon>
+                  </a>
+                    </template>
+                <span>supplementary material</span>
+            </v-tooltip>
+                  
+            <v-tooltip bottom  content-class="pub-icon-tooltip"> 
+                <template v-slot:activator="{ on, attrs }">
+                <a
+                    class="ml-2"
+                    :href="publication.gsx$presentationslides.$t"
+                    target="_blank"
+                  >           
+                    <v-icon v-bind="attrs" v-on="on" medium>mdi-presentation</v-icon>
+                  </a> 
+                  </template>
+                <span>presenation slides</span>
+            </v-tooltip>
+                
+            <v-tooltip bottom  content-class="pub-icon-tooltip"> 
+                <template v-slot:activator="{ on, attrs }">
+                  <a
+                    class="ml-1 iconfromsvg"
+                    :href="publication.gsx$presentationvideo.$t"
+                    target="_blank"
+                  >
+                    <img v-bind="attrs" v-on="on"
+                      src="@/assets/icons/nounproject_Lecturer_8076.svg"
+                      alt="Lecturer"
+                    />
+                  </a>      
+                  </template>
+                <span>live presentation</span>
+            </v-tooltip>
           </v-row>
         </div>
       </v-list-item-content>
     </v-list-item>
+
+
     <v-snackbar
       v-model="snackbar"
       :timeout="timeout"
@@ -152,14 +147,14 @@ export default {
   },
   props: ["publication"],
   methods: {
-    copyToClipboard(text) {
+    copyToClipboard(text,snackbarText) {
       const el = document.createElement("textarea");
       el.value = text;
       document.body.appendChild(el);
       el.select();
       document.execCommand("copy");
       document.body.removeChild(el);
-      this.snackbarText = "Citation copied";
+      this.snackbarText = snackbarText;
       this.snackbar = true;
     },
   },
