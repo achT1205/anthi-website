@@ -202,5 +202,6 @@ body .v-application .title {
 
 .container {
   max-width: 1280px;
+  height: 2px;
 }
 </style>

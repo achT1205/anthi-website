@@ -263,7 +263,7 @@ a:link {
 }
 .email-href{
   color: white !important;
-  font-size: 13px!important;
+  
 }
 
 html, body {
