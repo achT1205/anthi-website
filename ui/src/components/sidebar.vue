@@ -101,6 +101,7 @@
     width: 260px;
     height: 92.5vh;
     position: fixed;
+    font-size: 16px!important;
     top: 50px;
     color: $white;
     .sidebar-content{
