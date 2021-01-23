@@ -200,7 +200,7 @@ export default {
   }
 }
 
-@media (min-width: 600px){
+@media (min-width: 800px){
   .bl-1{
     flex-direction: row;
   }

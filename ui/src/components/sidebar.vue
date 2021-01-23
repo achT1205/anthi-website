@@ -113,7 +113,7 @@
       color: $white;
     }
   }
-@media (max-width: 600px){
+@media (max-width: 800px){
   .sidebar{
     position: relative;
     width: 100%;
