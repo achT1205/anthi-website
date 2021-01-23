@@ -31,13 +31,14 @@
       </ul>
       
     </nav>
-   
+   <div class= "cat-with-line">
     <hr class ="menu-horizontal-line">
      <img 
                       src="@/assets/images/noun_Cat_564414.svg"
                       alt="cat"
                       class="cat-for-menu"
     />
+    </div>
     </v-container>
           
 
@@ -96,12 +97,17 @@ header {
   }
 
   .cat-for-menu{
-    right: 41px;
-    top:41px;
-    position: absolute;
-    width:40px;
-      filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.4));
+   
+  //  left: 100%;
+    float:right;
+    top: -10px;
+    position: relative;
+    width: 40px;
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.4));
+  }
 
+  .cat-with-line{
+    // float:right;
   }
 }
 .theme--light.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active), .theme--light.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active) > .v-icon, .theme--light.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active) > .v-btn, .theme--light.v-tabs > .v-tabs-bar .v-tab--disabled{
