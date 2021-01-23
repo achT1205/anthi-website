@@ -43,7 +43,9 @@
     Research is an exciting trip to the “unknown” that includes problem solving
     skills, curiosity, ability to cope with uncertainty, writing, reading,
     presentation and communication skills (mainly in
-    <span class="give-emphasis">English</span>), as well as empathy for the
+    <a class="discrete-link" href="https://www.amazon.com/Elements-Style-Fourth-William-Strunk/dp/020530902X/ref=sr_1_2?dchild=1&keywords=the+elements+of+style&qid=1611423462&s=books&sr=1-2
+" target="_blank">
+    <span class="give-emphasis">English</span>)</a>, as well as empathy for the
     people who will benefit from your work . You are not expected to be good at
     all those things before starting a Ph.D. My purpose in your Ph.D. training
     is to support you in developing all these skills, so you will become a
@@ -59,11 +61,15 @@
     project. For example, most Ph.D. topics in visualization require students
     who can
     <span class="give-emphasis">code</span> their own interactive visualizations
-    (e.g., to know d3.js) and develop a platform for online user experiments.
+    (e.g., to 
+  
+       <a class="discrete-link" href="https://d3js.org/" target="_blank">know d3.js</a>) and develop a platform for online user experiments.
     Such programming skills would be a bonus in your application. Some prior
-    knowledge in <span class="give-emphasis">data visualization</span>,
+    knowledge in 
+    <a class="discrete-link" href="  https://www.coursera.org/instructor/~28471750" target="_blank">
+<span class="give-emphasis">data visualization</span></a>,
     <span class="give-emphasis">experiment design</span> and
-    <span class="give-emphasis">statistical analysis</span>, too. If you do not
+    <a class="discrete-link" href="https://www.routledge.com/Introduction-to-the-New-Statistics-Estimation-Open-Science-and-Beyond/Cumming-Calin-Jageman/p/book/9781138825529" target="_blank"><span class="give-emphasis">statistical analysis</span></a>, too. If you do not
     have yet some of these skills, but you have a strong motivation in working
     (<span class="give-emphasis">autonomously</span>) on obtaining them, please
     try to demonstrate this in your application. In case you consider that
@@ -71,7 +77,8 @@
     to do, please explain this in your application. In case now that you are
     interested in a more technically demanding topic (e.g., see the top of the
     pyramid in my research page), then you might need to have a skillset in
-    AI/ML/data analytic techniques. You should have in mind, though, that my
+    <a class="discrete-link" href="https://christophm.github.io/interpretable-ml-book/" target="_blank">
+AI/ML/</a>data analytic techniques. You should have in mind, though, that my
     research focus is on the integration of such algorithms within a user
     interface. This means that if you would like to focus solely on, e.g.,
     improving ML models without a human user in the loop, given that this is not
