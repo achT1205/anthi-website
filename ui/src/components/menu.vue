@@ -151,12 +151,12 @@ header {
     width: 100%;
     list-style: none;
     padding-left: 0;
-    li {
-      border-top: 1px solid $lightenGray;
-      a {
-        padding: 0.5em;
+    li{
+      border-top: 1px solid $gold;
+      a{
+        padding: .5em;
         display: block;
-        color: $lightenGray;
+        color: $gold;
         text-transform: uppercase;
         font-size: 18px;
         font-weight: 700;
