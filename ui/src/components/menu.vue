@@ -132,7 +132,7 @@ header {
   display: none;
   justify-content: flex-end;
   flex-direction: column;
-  border-bottom: 1px solid $gold;
+  // border-bottom: 1px solid $gold;
   .bars-btn{
     width: 100%;
     justify-content: flex-end;
