@@ -2,7 +2,7 @@
   <div class="page search">
 
     <v-card elevation="0">
-      <h2 class="custom-title">Main Research Domain</h2>
+      <h2 class="custom-title">Main research domain</h2>
       <div class="d-flex flex-no-wrap justify-start">
         <v-row>
           <v-col cols="12">
@@ -17,7 +17,7 @@
     </v-card>
 
     <v-card elevation="0">
-      <h2 class="custom-title">Main Research Interests</h2>
+      <h2 class="custom-title">(some of) My research interests</h2>
       <div class="d-flex flex-no-wrap justify-start">
         <v-row>
           <v-col cols="12">
@@ -37,6 +37,34 @@
   </div>
 </template>
 
+
+
+<script>
+import { mapGetters } from "vuex";
+export default {
+  name: "Search",
+  data() {
+    return {
+      search: null,
+      fab: false,
+    };
+  }, 
+  mounted() {
+    this.$vuetify.goTo(0);
+  },
+
+  methods: {
+    onScroll(e) {
+      if (typeof window === "undefined") return;
+      const top = window.pageYOffset || e.target.scrollTop || 0;
+      this.fab = top > 20;
+    },
+    toTop() {
+      this.$vuetify.goTo(0);
+    },
+  },
+};
+</script>
 
 <style scoped>
 .triangle_new_withText {

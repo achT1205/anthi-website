@@ -69,6 +69,7 @@ export default {
     ...mapGetters(["publications"]),
   },
   mounted() {
+    this.$vuetify.goTo(0);
     this.filteredPublications = [...this.publications];
   },
 

@@ -120,6 +120,9 @@ export default {
   data() {
     return {};
   },
+  mounted() {
+    this.$vuetify.goTo(0);
+  },
   components: {},
   methods:{
   redirectToResearch(){

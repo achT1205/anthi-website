@@ -136,7 +136,7 @@ body .v-application .title{
    font-weight: 500;
   opacity: 1;
   font-size: 22px;
-  margin-top:20px;
+  margin-top:0px;
   margin-left:50px;
 }
 
