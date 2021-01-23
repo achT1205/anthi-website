@@ -33,6 +33,21 @@
             </v-tooltip>
 
 
+      <v-tooltip bottom  content-class="pub-icon-tooltip"> 
+          <template v-slot:activator="{ on, attrs }">
+            <a
+              class="ml-1 lecturer"
+              :href="publication.gsx$bibtex.$t"
+              target="_blank"
+            >
+              <img v-bind="attrs" v-on="on"
+                src="@/assets/icons/nounproject_TEX File_342079.svg"
+                alt="BibTex"
+              />
+            </a>      
+            </template>
+          <span>copy bibtex</span>
+      </v-tooltip>
 
        <v-tooltip bottom  content-class="pub-icon-tooltip"> 
           <template v-slot:activator="{ on, attrs }">
@@ -40,10 +55,27 @@
               <v-icon  v-bind="attrs" v-on="on" medium>fas fa-file-pdf</v-icon>
             </a>
           </template>
-          <span>PDF</span>
+          <span>download PDF</span>
       </v-tooltip>
 
-       <v-tooltip bottom  content-class="pub-icon-tooltip"> 
+
+
+            
+      <v-tooltip bottom  content-class="pub-icon-tooltip"> 
+          <template v-slot:activator="{ on, attrs }">
+            <a
+              class="ml-2"
+              :href="publication.gsx$shortpreviewvideo.$t"
+              target="_blank"
+            >
+              <v-icon v-bind="attrs" v-on="on" medium>fas fa-film</v-icon>
+            </a> 
+            </template>
+          <span>video preview</span>
+      </v-tooltip>
+
+
+      <v-tooltip bottom  content-class="pub-icon-tooltip"> 
           <template v-slot:activator="{ on, attrs }">
             <a
               class="ml-2"
@@ -55,41 +87,36 @@
                </template>
           <span>supplementary material</span>
       </v-tooltip>
-
-            <a
-              class="ml-1 lecturer"
-              :href="publication.gsx$bibtex.$t"
-              target="_blank"
-            >
-              <img
-                src="@/assets/icons/nounproject_TEX File_342079.svg"
-                alt="BibTex"
-              />
-            </a>
-            <a
-              class="ml-2"
-              :href="publication.gsx$shortpreviewvideo.$t"
-              target="_blank"
-            >
-              <v-icon medium>fas fa-film</v-icon>
-            </a>
-            <a
+            
+      <v-tooltip bottom  content-class="pub-icon-tooltip"> 
+          <template v-slot:activator="{ on, attrs }">
+           <a
               class="ml-2"
               :href="publication.gsx$presentationslides.$t"
               target="_blank"
-            >
-              <v-icon medium>mdi-presentation</v-icon>
-            </a>
+            >           
+              <v-icon v-bind="attrs" v-on="on" medium>mdi-presentation</v-icon>
+            </a> 
+            </template>
+          <span>presenation slides</span>
+      </v-tooltip>
+          
+      <v-tooltip bottom  content-class="pub-icon-tooltip"> 
+          <template v-slot:activator="{ on, attrs }">
             <a
               class="ml-1 lecturer"
               :href="publication.gsx$presentationvideo.$t"
               target="_blank"
             >
-              <img
-                src="@/assets/icons/nounproject_Lecturer_8076.svg"
+              <img v-bind="attrs" v-on="on"
+                 src="@/assets/icons/nounproject_Lecturer_8076.svg"
                 alt="Lecturer"
               />
-            </a>
+            </a>      
+            </template>
+          <span>live presentation</span>
+      </v-tooltip>
+
           </v-row>
         </div>
       </v-list-item-content>
@@ -140,10 +167,8 @@ export default {
 <style lang="scss"  scoped>
 .pub-icon-tooltip {
   color: $darkenBrown;
-  background-color: white;
-  margin-top:-7px;
-  max-width:"10px" ;
-  
+  background-color: #fafafa;
+  margin-top:-9px;
 }
 
 .myclass {
