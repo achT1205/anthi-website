@@ -29,7 +29,7 @@
               </v-icon>
 
               </template>
-              <span>copy the citation</span>
+              <span>copy citation</span>
             </v-tooltip>
 
 
