@@ -22,7 +22,7 @@
     </a>
     (<span class="give-emphasis"> by 10%</span>). The position involves
     relocation to the beautiful and vibrant city of
-    <a class="discrete-link" href="https://vig.science.uu.nl/" target="_blank">
+    <a class="discrete-link" href="https://www.visit-utrecht.com/" target="_blank">
       Utrecht
     </a>
     in the Netherlands.
