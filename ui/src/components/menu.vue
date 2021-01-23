@@ -31,7 +31,13 @@
       </ul>
       
     </nav>
+   
     <hr class ="menu-horizontal-line">
+     <img 
+                      src="@/assets/images/noun_Cat_564414.svg"
+                      alt="cat"
+                      class="cat-for-menu"
+    />
     </v-container>
           
 
@@ -87,6 +93,13 @@ header {
     background: $gold;
     color: $white;
     border: 1px solid $darkenBrown;
+  }
+
+  .cat-for-menu{
+    right: 41px;
+    top:41px;
+    position: absolute;
+    width:40px
   }
 }
 .theme--light.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active), .theme--light.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active) > .v-icon, .theme--light.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active) > .v-btn, .theme--light.v-tabs > .v-tabs-bar .v-tab--disabled{
