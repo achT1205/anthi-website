@@ -36,7 +36,7 @@
       <v-tooltip bottom  content-class="pub-icon-tooltip"> 
           <template v-slot:activator="{ on, attrs }">
             <a
-              class="ml-1 lecturer"
+              class="ml-1 iconfromsvg"
               :href="publication.gsx$bibtex.$t"
               target="_blank"
             >
@@ -104,7 +104,7 @@
       <v-tooltip bottom  content-class="pub-icon-tooltip"> 
           <template v-slot:activator="{ on, attrs }">
             <a
-              class="ml-1 lecturer"
+              class="ml-1 iconfromsvg"
               :href="publication.gsx$presentationvideo.$t"
               target="_blank"
             >
@@ -126,12 +126,14 @@
       :timeout="timeout"
       top
       right
-      content-class="myclass"
+      text
+      color = gray
+      content-class="action-notification"
     >
       {{ snackbarText }}
 
       <template v-slot:action="{ attrs }">
-        <v-btn color="pink" text v-bind="attrs" @click="snackbar = false">
+        <v-btn color="gray" text v-bind="attrs" @click="snackbar = false">
           Close
         </v-btn>
       </template>
@@ -145,7 +147,7 @@ export default {
     return {
       snackbar: false,
       snackbarText: "",
-      timeout: 1500,
+      timeout: 2000,
     };
   },
   props: ["publication"],
@@ -171,16 +173,15 @@ export default {
   margin-top:-9px;
 }
 
-.myclass {
-  color: white;
-  background-color: red;
+.action-notification {
+  
 }
 
-.lecturer img {
+.iconfromsvg img {
   height: 24px;
 }
 
-.lecturer {
+.iconfromsvg {
   margin-top: 1px;
 }
 
