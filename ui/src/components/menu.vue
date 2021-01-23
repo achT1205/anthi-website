@@ -80,7 +80,7 @@ header {
     padding-left: 8px;
     padding-right: 8px;
     margin-right:27px;
-    height:36px;
+    height:35px;
     
   }
   .item-link.v-tab.v-tab.v-tab--active{
@@ -97,8 +97,13 @@ header {
   opacity: 0.99;
   background-color: $darkenBrown;
   margin-top: -14px;
-  height: 2px;
-  color: $darkenBrown;
+  // height: 2px;
+  // color: $darkenBrown;
+
+
+  height: 0px;
+  border: none;
+  border-top: 1px solid $darkenBrown;
   
 }
 
