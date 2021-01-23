@@ -1,6 +1,16 @@
 <template>
   <div class="page search">
+
+    <div class="publication-text">
+    All my publication material is available to download. 
+    Material can include the pdf of the article, video previews, bibtex,
+    analysis scripts, data,  experiment stimuli, presentation slides and live video when applicable. 
+    Participant data from experiments are anonymized. 
+    Interview transcripts are not available due to data privacy protection.</div>
+
     <h2 class="custom-title">Selected Publications</h2>
+
+  
 
     <div class="pub-all-list">
       <publication-card
@@ -114,6 +124,14 @@ export default {
 
 .pub-all-list {
   margin-left: 25px;
+}
+
+.publication-text{
+  font-weight: 300;
+  font-size: 17px;
+  padding-left: 50px;
+  padding-top:10px;
+  padding-bottom:20px;
 }
 </style>
 
