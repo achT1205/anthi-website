@@ -99,7 +99,9 @@ header {
     right: 41px;
     top:41px;
     position: absolute;
-    width:40px
+    width:40px;
+      filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.4));
+
   }
 }
 .theme--light.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active), .theme--light.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active) > .v-icon, .theme--light.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active) > .v-btn, .theme--light.v-tabs > .v-tabs-bar .v-tab--disabled{
