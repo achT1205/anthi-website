@@ -1,12 +1,21 @@
 <template>
   <div class="home1">
-    <div class="d-flex justify-center">
-      <img
-        class="tv-preview mt-10"
-        src="@/assets/images/tv-placeholder.png"
-        alt="papers-preview"
-      />
-    </div>
+    
+
+    <v-card elevation="0">
+      <div class="">
+        <v-row>
+          <v-col cols="12">
+            <img
+              class="tv-preview"
+              src="@/assets/images/tv-placeholder.png"
+              alt="research domain"
+            />
+          </v-col>
+        </v-row>
+      </div>
+    </v-card>
+
     <v-card elevation="0">
       <div class="d-flex flex-no-wrap justify-start bl-1">
         <v-avatar class="ma-0 mt-5" size="125" tile>
@@ -188,6 +197,13 @@ export default {
 }
 
 .tv-preview {
+  // width: 200px;
+  // margin-left: 36%;
+
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 200px;
 }
 
