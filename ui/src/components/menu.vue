@@ -102,6 +102,9 @@ header {
     margin-right: 27px;
     height: 35px;
   }
+   .v-tab, .v-tab:hover {
+  background: $lightenGray;
+    } 
   .item-link.v-tab.v-tab.v-tab--active {
     background: $gold;
     color: $white;
