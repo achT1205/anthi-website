@@ -93,7 +93,7 @@ header {
   background: #ffffff;
   z-index: 1;
   .item-link.v-tab.v-tab {
-    color: $lightenGray;
+    color: $darkenBrown!important;
     font-weight: 400; // regulrar
     font-size: $menuFontSize;
     border-radius: $halfradius;
@@ -107,7 +107,7 @@ header {
     } 
   .item-link.v-tab.v-tab.v-tab--active {
     background: $gold;
-    color: $white;
+    color: $white!important;
     border: 1px solid $darkenBrown;
   }
 
