@@ -136,12 +136,17 @@ header {
   display: none;
   justify-content: flex-end;
   flex-direction: column;
-  background-color:$darkenBrown;
+  .theme--light.v-btn {
+    color: $gold;
+    background-color:white;
+  }
+  // background-color:$darkenBrown;
   .bars-btn {
     width: 100%;
     justify-content: flex-end;
     display: flex;
     padding: 0.7rem;
+    // background-color:$darkenBrown;
   }
   .show-nav {
     display: none;
@@ -149,8 +154,9 @@ header {
     width: 100%;
     list-style: none;
     padding-left: 0;
+    background-color:white;
     li{
-      border-top: 1px solid $gold;
+      border-bottom: 1px solid $lightenGray;
       a{
         padding: .5em;
         display: block;
