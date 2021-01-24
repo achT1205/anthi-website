@@ -188,7 +188,7 @@ export default {
 }
 
 .tv-preview {
-  width: 350px;
+  width: 200px;
 }
 
 .more-information-mi {
