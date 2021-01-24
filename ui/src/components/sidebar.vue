@@ -27,7 +27,7 @@
           <img height="35" src="@/assets/images/UtrechtUniversity_logo_EN_WHITE.png" alt="Utrecht University Logo" />
         </a>
       </div>
-    <div class="d-flex mt-6">
+    <div class="d-flex mt-9">
         <h4>Contact me via</h4>
     </div>
 
@@ -70,7 +70,7 @@
       </div>
   
     
-    <div class="d-flex mt-15 ml-0 contact-footer">
+    <div class="d-flex mt-3 ml-0 contact-footer">
       <h4>Mailing Address</h4>
       <a href="https://goo.gl/maps/Gjphw3XGb4rX3VhU8" target="_blank" class="ml-0">
         <v-icon small color="white">fas fa-search-location</v-icon>

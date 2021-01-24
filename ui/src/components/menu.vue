@@ -132,13 +132,11 @@ header {
   border-top: 1px solid $darkenBrown;
 }
 
-.menu-links-box {
-  color: red;
-}
 .menu-mobile {
   display: none;
   justify-content: flex-end;
   flex-direction: column;
+  background-color:$darkenBrown;
   .bars-btn {
     width: 100%;
     justify-content: flex-end;
