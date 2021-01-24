@@ -173,7 +173,8 @@ header {
     display: none;
   }
   .cat-for-menu {
-    display: none;
+    margin-left: 0!important;
+   
   }
   .menu-mobile {
     display: flex;
