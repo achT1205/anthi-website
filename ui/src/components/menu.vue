@@ -140,8 +140,13 @@ header {
   justify-content: flex-end;
   flex-direction: column;
   .theme--light.v-btn {
-    color: $gold;
+    color: $darkenBrown;
     background-color:white;
+    margin-top: -66px;
+    opacity:0.7;
+    border:2px solid;
+        filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.4));
+
   }
   // background-color:$darkenBrown;
   .bars-btn {
