@@ -169,6 +169,10 @@ header {
         font-weight: 700;
       }
     }
+    a:hover{
+      background-color:$gold ;
+      color:white;
+    }
   }
 }
 @media (max-width: 800px) {
