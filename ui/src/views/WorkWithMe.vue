@@ -116,7 +116,7 @@ export default {
         "A subject header that starts with the phrase “[Prospective Student]”.",
         "A paragraph explaining why you would like to work with me.",
         "A decsription of your research interests along with your first thoughts on the project you would be interested in working on (either something I am working on or a topic of your choice).",
-        "A demostration of your technical skills or skills you lack, but you are motivated to obtain. There is no need to list everything you know, but only refer to skills that you think that could be relevant to your project. Such description can include: programming skills for developping visualizations/online experiment plattforms (e.g., you github account) or relevant software you are familiar with, or your skills in experiment design, statistics and data analysis, or more special skills in case your project involves AI/ML/advanced analytics.",
+        "A demostration of your technical skills or skills you lack, but you are motivated to obtain. There is no need to list everything you know, but only refer to skills that you think that could be relevant to your project. Such description can include: programming skills for developping visualizations/online experiment plattforms (e.g., your github account) or relevant software you are familiar with, or your skills in experiment design, statistics and data analysis, or more special skills in case your project involves AI/ML/advanced analytics.",
         "A document you have written (e.g., a publication, a report, a dissertation, etc ).",
         "Your time constraints (e.g., possible starting date) for migrating to Utrecht.",
         "Contact details of 2 or 3 referees.",
