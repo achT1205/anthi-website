@@ -4,7 +4,7 @@
     <v-card elevation="0" class="d-flex  justify-center">
       <div >
         <v-row>
-          <v-col cols="9">
+          <v-col cols="12">
             <h2 class="research-custom-title">Main research domain</h2>
 
             <img
@@ -70,7 +70,7 @@ export default {
 
 <style lang="scss" scoped>
 .triangle_new_withText {
-  width: 85%;
+  width: 100%;
    display: block;
   margin-left: auto;
   margin-right: auto;
