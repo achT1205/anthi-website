@@ -172,6 +172,7 @@ body .v-application .title {
 
 .department-text {
   font-size: 10px;
+  margin-left:6px;
 }
 .views {
   //color: rgba(0, 0, 0, 0.87);
