@@ -1,11 +1,12 @@
 <template>
   <div class="page search">
 
-    <v-card elevation="0">
-      <h2 class="custom-title">Main research domain</h2>
-      <div class="d-flex flex-no-wrap justify-start">
+    <v-card elevation="0" class="d-flex  justify-center">
+      <div >
         <v-row>
-          <v-col cols="12">
+          <v-col cols="11">
+            <h2 class="research-custom-title">Main research domain</h2>
+
             <img
             class="research-domain"
               src="@/assets/images/research_domain_artboard_for_screens_web.png"
@@ -16,11 +17,12 @@
       </div>
     </v-card>
 
-    <v-card elevation="0">
-      <h2 class="custom-title">(some of) My research interests</h2>
-      <div class="d-flex flex-no-wrap justify-start">
+    <v-card elevation="0" class="d-flex justify-center">
+      <div >
         <v-row>
           <v-col cols="12">
+            <h2 class="research-custom-title">(some of) My research interests</h2>
+
             <img
             class="triangle_new_withText"
               src="@/assets/images/pyramide_oldwebiste.gif"
@@ -66,22 +68,38 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .triangle_new_withText {
-  width: 90%;
-  margin-left:20px;
-  margin-top:-20px;
+  width: 100%;
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  // margin-left:20px;
+  // margin-top:-20px;
 }
 
 .research-domain{
-  width: 30%;
-  margin-left:40px;
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  
+  // margin-left:40px;
 }
 .img-fluid{
   max-width: 100%;
 
 }
 
+
+.research-custom-title {
+  color: $darkenBrown;
+  font-weight: 500;
+  opacity: 1;
+  font-size: 22px;
+  text-align: center;
+ 
+}
 
 </style>
 
