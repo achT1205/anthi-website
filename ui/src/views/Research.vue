@@ -4,7 +4,7 @@
     <v-card elevation="0" class="d-flex  justify-center">
       <div >
         <v-row>
-          <v-col cols="11">
+          <v-col cols="9">
             <h2 class="research-custom-title">Main research domain</h2>
 
             <img
@@ -82,7 +82,7 @@ export default {
    display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 70%;
+  width: 80%;
   
   // margin-left:40px;
 }
