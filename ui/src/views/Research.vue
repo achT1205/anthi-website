@@ -8,7 +8,7 @@
           <v-col cols="12">
             <img
             class="research-domain"
-              src="@/assets/images/research_domain_newsite-01.png"
+              src="@/assets/images/research_domain_artboard_for_screens_web.png"
               alt="research domain"
             />
           </v-col>
@@ -23,7 +23,7 @@
           <v-col cols="12">
             <img
             class="triangle_new_withText"
-              src="@/assets/images/pyramide_oldwebiste-01.png"
+              src="@/assets/images/pyramide_oldwebiste.gif"
               alt="pyramide research interests"
             />
           </v-col>
