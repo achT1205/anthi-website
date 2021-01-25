@@ -140,10 +140,10 @@ header {
   justify-content: flex-end;
   flex-direction: column;
   .theme--light.v-btn {
-    color: $darkenBrown;
+    color: $lightenGray;
     background-color:white;
     margin-top: -66px;
-    opacity:0.7;
+    opacity:1;
     border:2px solid;
         filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.4));
 
@@ -162,7 +162,9 @@ header {
     width: 100%;
     list-style: none;
     padding-left: 0;
+    margin-top:-67px;
     background-color:white;
+    
     li{
       border-bottom: 1px solid $lightenGray;
       a{
