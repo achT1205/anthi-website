@@ -70,7 +70,7 @@ export default {
 
 <style lang="scss" scoped>
 .triangle_new_withText {
-  width: 100%;
+  width: 85%;
    display: block;
   margin-left: auto;
   margin-right: auto;
@@ -82,7 +82,7 @@ export default {
    display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 70%;
   
   // margin-left:40px;
 }
