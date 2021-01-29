@@ -12,9 +12,9 @@
         />
       </v-list-item-avatar>
       <v-list-item-content>
-        <div class="pub-authors"> {{ publication.gsx$authors.$t }}  </div>
+        <div class="pub-authors"> {{ publication.gsx$authors.$t}}  <span class="pub-year">  {{ publication.gsx$year.$t }}. </span></div>
         <div class="pub-title">   {{ publication.gsx$title.$t }}    </div>
-        <div class="pub-venue">   {{ publication.gsx$venue.$t }}    </div>
+        <div class="pub-venue">   {{ publication.gsx$venue.$t }}  </div>
         <div class="pub-icons">
       
         <v-row align="center" justify="start" class="ml-1 mt-0">
@@ -168,7 +168,8 @@ export default {
   margin-top:-9px;
 }
 
-.action-notification {
+.pub-year {
+  margin-left:10px;
   
 }
 
