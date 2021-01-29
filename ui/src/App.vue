@@ -208,7 +208,7 @@ body .v-application .title {
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1300px;
   height: 2px;
 }
 
