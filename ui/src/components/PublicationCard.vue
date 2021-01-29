@@ -169,13 +169,14 @@ export default {
 }
 
 .pub-year {
-  margin: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  box-shadow: 0 0 0 2px #E8E8E8;
-  border-radius: 5px;
+ margin: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    box-shadow: 0 0 0 2px #e8e8e8;
+    border-radius: 5px;
+    font-size: 15px;
 
 }
 
