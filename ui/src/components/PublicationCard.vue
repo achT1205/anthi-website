@@ -12,7 +12,7 @@
         />
       </v-list-item-avatar>
       <v-list-item-content>
-        <div class="pub-authors"> {{ publication.gsx$authors.$t}}  <span class="pub-year">  {{ publication.gsx$year.$t }}. </span></div>
+        <div class="pub-authors"> {{ publication.gsx$authors.$t}}  <span class="pub-year">  {{ publication.gsx$year.$t }} </span></div>
         <div class="pub-title">   {{ publication.gsx$title.$t }}    </div>
         <div class="pub-venue">   {{ publication.gsx$venue.$t }}  </div>
         <div class="pub-icons">
@@ -169,8 +169,14 @@ export default {
 }
 
 .pub-year {
-  margin-left:10px;
-  
+  margin: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  box-shadow: 0 0 0 2px #E8E8E8;
+  border-radius: 5px;
+
 }
 
 .iconfromsvg img {
