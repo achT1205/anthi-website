@@ -14,11 +14,15 @@
             />
             <div class="views pt-13">
               <router-view></router-view>
+              
+                    <div class="fluid-container footer"> <small>&copy; Copyright <span id="copyright-year">2020</span>,  Evanthia Dimara</small> </div>
             </div>
           </div>
         </div>
       </v-row>
+ 
     </v-container>
+   
   </v-app>
 </template>
 
@@ -41,6 +45,7 @@ export default {
   mounted() {
     this.$store.dispatch("loadPublications");
     this.onResize();
+    document.querySelector('#copyright-year').innerText = new Date().getFullYear()
   },
   methods: {
     onResize(e) {
@@ -48,6 +53,7 @@ export default {
     },
   },
 };
+//document.querySelector('#copyright-year').innerText = new Date().getFullYear();
 </script>
 
 <style lang="scss">
@@ -204,5 +210,14 @@ body .v-application .title {
 .container {
   max-width: 1280px;
   height: 2px;
+}
+
+.fluid-container.footer{
+  text-align: right;
+    margin-bottom: -50px;
+}
+.fluid-container.footer > *:last-child {
+  
+    color: lightgray;
 }
 </style>
