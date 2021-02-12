@@ -86,7 +86,15 @@ AI/ML/</a>data analytic techniques. You should have in mind, though, that my
 
     <h2 class="job-ad-subtitle">Interested?</h2>
 
-    Send me an email with:
+    Apply to the official university vacancy before <strong> 28 March 2021 </strong>  below <br/> 
+    <a class="give-more-emphasis" href="https://www.uu.nl/en/organisation/working-at-utrecht-university/jobs/three-phd-positions-in-visualization-and-visual-analytics-10-fte
+"> APPLY HERE** </a>  
+<div class ="clarification" > ** Please also consider applying to the Ph.D. 
+topics offered by my excellent colleagues,  M. Behrisch and T. Mtsentlintze, 
+if those are more in line with your interests. 
+However, note that you can only select <strong> one  </strong> of our three topics. ** <br/> <br/>  </div> 
+
+    and send me also an email with:
     <ul class="mt-4 mb-4" style="list-style: none">
       <li
         v-for="(interested, index) in interesteds"
@@ -136,7 +144,7 @@ export default {
   font-weight: 400;
   opacity: 1;
   font-size: 19px;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 .interested {
   margin-left: -45px;
@@ -150,16 +158,25 @@ export default {
 }
 
 .give-more-emphasis {
-  font-weight: 500;
+  font-weight: 800;
   color: $gold;
+ 
 }
 .work-with-me {
   font-weight: 300;
   font-size: 17px;
-  padding-left: 30px;
+  padding-left: 40px;
+  padding-top: 30px;
 }
 
 .v-application a {
   color: $darkenBrown;
 }
+
+.clarification{
+  color:gray;
+  font-size:13px;
+}
+
+
 </style>

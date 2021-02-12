@@ -131,10 +131,10 @@
                     Paradigm.
                   </v-col>
                   <div class="ml-2 phdadvisors">
-                    <span class="demphasize"> (best)</span> Advisors
+                    <span class="demphasize">(best)</span> Advisors
                     <span class="demphasize">(ever)</span>
                     <a href="http://dragice.fr/" target="_blank"
-                      >Pierre Dragicevic</a
+                      >: Pierre Dragicevic</a
                     >,
                     <a href="https://www.aviz.fr/" target="_blank">
                       AVIZ team</a
