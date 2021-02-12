@@ -14,7 +14,6 @@
             />
             <div class="views pt-13">
               <router-view></router-view>
-              
                     <div class="fluid-container footer"> <small>&copy; Copyright <span id="copyright-year">2020</span>,  Evanthia Dimara</small> </div>
             </div>
           </div>
@@ -50,6 +49,7 @@ export default {
   methods: {
     onResize(e) {
       this.windowSize = { x: window.innerWidth, y: window.innerHeight };
+      this.$store.dispatch("setWindowsise",this.windowSize)
     },
   },
 };

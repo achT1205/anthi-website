@@ -25,7 +25,7 @@
 
             <img
             class="triangle_new_withText"
-              src="@/assets/images/pyramide_oldwebiste.gif"
+              :src="windowSize.x > 800 ?pyramide_horizontal:pyramide_vertical"
               alt="pyramide research interests"
             />
           </v-col>
@@ -49,10 +49,15 @@ export default {
     return {
       search: null,
       fab: false,
+      pyramide_horizontal :require('@/assets/images/pyramide_oldwebiste.gif'),
+      pyramide_vertical :require('@/assets/images/mobile-version_pyramide.png')
     };
   }, 
   mounted() {
     this.$vuetify.goTo(0);
+  },
+    computed: {
+    ...mapGetters(["windowSize"]),
   },
 
   methods: {
