@@ -89,7 +89,7 @@ AI/ML/</a>data analytic techniques. You should have in mind, though, that my
     Apply to the official university vacancy before <strong> 28 March 2021 </strong>  below <br/> 
     <a class="give-more-emphasis" href="https://www.uu.nl/en/organisation/working-at-utrecht-university/jobs/three-phd-positions-in-visualization-and-visual-analytics-10-fte
 "> APPLY HERE** </a>  
-<div class ="clarification" > ** Please also consider applying to the Ph.D. 
+<div class ="clarification" > ** Please consider applying to the Ph.D. 
 topics offered by my excellent colleagues,  M. Behrisch and T. Mtsentlintze, 
 if those are more in line with your interests. 
 However, note that you can only select <strong> one  </strong> of our three topics. ** <br/> <br/>  </div> 
