@@ -18,7 +18,7 @@
 
     <v-card elevation="0">
       <div class="d-flex flex-no-wrap justify-start bl-1">
-        <v-avatar class="ma-0 mt-5" size="125" tile>
+        <v-avatar class="ma-0 mt-1" size="125" tile>
           <v-icon class="card-icon">fas fa-info</v-icon>
         </v-avatar>
         <div>
@@ -68,14 +68,14 @@
               [more information >> ] </a> -->
             </div>
 
-            <div class="mt-4">
+            <!--  <div class="mt-4">
               I am recruiting PhD students.
               <span>
                 <router-link to="/work-with-me" class="more-information-mi">
                   [ more information >> ]
                 </router-link>
               </span>
-            </div>
+            </div>-->
           </v-card-text>
         </div>
       </div>
