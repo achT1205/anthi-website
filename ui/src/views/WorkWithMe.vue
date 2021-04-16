@@ -1,6 +1,6 @@
 <template>
   <div class="page work-with-me">
-    I am hiring graduate students for a fully funded 5-year
+    I am seeking for graduate students for a fully funded 5-year
     <span class="give-emphasis"> Ph.D.</span> position at Utrecht University in
     the area of interactive
     <span class="give-emphasis"> information visualization</span>,
@@ -51,7 +51,7 @@
     is to support you in developing all these skills, so you will become a
     brilliant <span class="give-emphasis">independent</span> researcher. At this
     stage, what I need from you is good “signs” that you have the potential to
-    develop such skills at the timeframe of your Ph.D. This means that the more
+    develop such skills at the timeframe of your Ph.D. This means the more
     of those skills I identify in your application, the more excited I will feel
     about it.
 
@@ -86,7 +86,7 @@ AI/ML/</a>data analytic techniques. You should have in mind, though, that my
 
     <h2 class="job-ad-subtitle">Interested?</h2>
 
-    Apply to the official university vacancy before <strong> 28 March 2021 </strong>  below <br/> 
+    <!-- Apply to the official university vacancy before <strong> 28 March 2021 </strong>  below <br/> 
     <a class="give-more-emphasis" href="https://www.uu.nl/en/organisation/working-at-utrecht-university/jobs/three-phd-positions-in-visualization-and-visual-analytics-10-fte
 "> APPLY HERE** </a>  
 <div class ="clarification" > ** Please consider applying to the Ph.D. 
@@ -94,7 +94,8 @@ topics offered by my excellent colleagues,  M. Behrisch and T. Mtsentlintze,
 if those are more in line with your interests. 
 However, note that you can only select <strong> one  </strong> of our three topics. ** <br/> <br/>  </div> 
 
-    and send me also an email with:
+    and send me also an email with:-->
+    Send me an email with:
     <ul class="mt-4 mb-4" style="list-style: none">
       <li
         v-for="(interested, index) in interesteds"
