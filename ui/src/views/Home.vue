@@ -150,6 +150,10 @@
                 </v-row>
               </div>
             </div>
+              <div>
+              <span class="mr-3">2014</span> Research Software Engineer at <a href="http://www.cendari.eu/" target="_blank">CENDARI</a>.
+            </div>
+            
             <div>
               <span class="mr-3">2013</span> M.Sc. in Human - Computer
               Interaction by University of Paris-Saclay, France.
