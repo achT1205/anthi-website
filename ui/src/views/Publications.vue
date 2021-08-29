@@ -15,9 +15,9 @@
     <div class="pub-all-list">
       <publication-card
         v-for="publication in publications.filter(
-          (p) => p.gsx$isaselectedpublication.$t === '1'
+          (p) => p.is_a_selected_publication === 1
         )"
-        :key="'_' + publication.gsx$paperid.$t"
+        :key="'_' + publication.paper_id"
         :publication="publication"
       />
     </div>
@@ -42,7 +42,7 @@
     <div class="pub-all-list">
       <publication-card
         v-for="publication in filteredPublications"
-        :key="publication.gsx$paperid.$t"
+        :key="publication.paper_id"
         :publication="publication"
       />
     </div>

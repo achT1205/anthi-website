@@ -5,16 +5,16 @@
         <img
           :src="
             require('@/assets/images/paper_teaser_figures/' +
-              publication.gsx$paperid.$t +
+              publication.paper_id +
               '_withFrameAndShadow.png')
           "
-          :alt="publication.gsx$paperid.$t"
+          :alt="publication.paper_id"
         />
       </v-list-item-avatar>
       <v-list-item-content>
-        <div class="pub-authors"> {{ publication.gsx$authors.$t}}  <span class="pub-year">  {{ publication.gsx$year.$t }} </span></div>
-        <div class="pub-title">   {{ publication.gsx$title.$t }}    </div>
-        <div class="pub-venue">   {{ publication.gsx$venue.$t }}  </div>
+        <div class="pub-authors"> {{ publication.authors}}  <span class="pub-year">  {{ publication.year }} </span></div>
+        <div class="pub-title">   {{ publication.title }}    </div>
+        <div class="pub-venue">   {{ publication.venue }}  </div>
         <div class="pub-icons">
       
         <v-row align="center" justify="start" class="ml-1 mt-0">
@@ -25,7 +25,7 @@
                     v-bind="attrs"
                     v-on="on"
                     medium
-                    @click.prevent="copyToClipboard(publication.gsx$copycitation.$t, 'The citation is copied to your clipboard.')"
+                    @click.prevent="copyToClipboard(publication.copy_citation, 'The citation is copied to your clipboard.')"
                     >fas fa-copy
                   </v-icon>
               </template>
@@ -36,7 +36,7 @@
                 <template v-slot:activator="{ on, attrs }">
                   <a
                     class="ml-1 iconfromsvg"
-                    @click="copyToClipboard(publication.gsx$bibtex.$t, 'The bibtex code is copied to your clipboard.')"
+                    @click="copyToClipboard(publication.bibtex, 'The bibtex code is copied to your clipboard.')"
                     target="_blank"
                   >
                     <img v-bind="attrs" v-on="on"
@@ -50,7 +50,7 @@
 
             <v-tooltip bottom  content-class="pub-icon-tooltip"> 
                 <template v-slot:activator="{ on, attrs }">
-                  <a class="ml-2" :href="publication.gsx$paperpdf.$t" target="_blank">
+                  <a class="ml-2" :href="publication.paper_pdf" target="_blank">
                     <v-icon  v-bind="attrs" v-on="on" medium>fas fa-file-pdf</v-icon>
                   </a>
                 </template>
@@ -60,7 +60,7 @@
                 <template v-slot:activator="{ on, attrs }">
                   <a
                     class="ml-2"
-                    :href="publication.gsx$shortpreviewvideo.$t"
+                    :href="publication.short_preview_video"
                     target="_blank"
                   >
                     <v-icon v-bind="attrs" v-on="on" medium>fas fa-film</v-icon>
@@ -73,7 +73,7 @@
                 <template v-slot:activator="{ on, attrs }">
                   <a
                     class="ml-2"
-                    :href="publication.gsx$suppementarymaterial.$t"
+                    :href="publication.suppementary_material"
                     target="_blank"
                   >
                     <v-icon  v-bind="attrs" v-on="on" medium>fas fa-cog</v-icon>
@@ -86,7 +86,7 @@
                 <template v-slot:activator="{ on, attrs }">
                 <a
                     class="ml-2"
-                    :href="publication.gsx$presentationslides.$t"
+                    :href="publication.presentation_slides"
                     target="_blank"
                   >           
                     <v-icon v-bind="attrs" v-on="on" medium>mdi-presentation</v-icon>
@@ -99,7 +99,7 @@
                 <template v-slot:activator="{ on, attrs }">
                   <a
                     class="ml-1 iconfromsvg"
-                    :href="publication.gsx$presentationvideo.$t"
+                    :href="publication.presentation_video"
                     target="_blank"
                   >
                     <img v-bind="attrs" v-on="on"

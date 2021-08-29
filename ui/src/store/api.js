@@ -2,18 +2,30 @@ import axios from "axios";
 
 export const fetchPublications = () =>
     new Promise((resolve, reject) => {
-
-        axios.get("https://spreadsheets.google.com/feeds/list/1Ek4NLsRKqjjT5lcUhINvHE1QvEv0REU3Ckj0eOYWMJ0/od6/public/values?alt=json").then((resp) => {
-
-            /* const publications = resp.data.feed.entry
-             const pubs = [];
-             publications.forEach(pub => {
-                 pubs.push({
-                     all_publications_order_of_appearance: pub.gsx$allpublicationsorderofappearance.$t
-                 })
-             });*/
-
-            resolve(resp.data.feed.entry)
+        axios.get(process.env.VUE_APP_PUBLICATIONS_ENDPOINT).then((resp) => {
+            resolve(formatData(resp.data.values))
         })
             .catch(error => reject(error));
     });
+
+const formatData = (rows) => {
+    const headerRow = rows[0];
+    const dataRows = rows.slice(1);
+    const publications = [];
+    dataRows.forEach(row => {
+        const publication = {};
+        headerRow.forEach((column, index) => {
+            const value = row[index];
+            if (isInt(value))
+                publication[column] = parseInt(value);
+            else
+                publication[column] = value;
+        });
+        publications.push(publication);
+    });
+    return publications;
+}
+
+const isInt = (value) => {
+    return !isNaN(value) && (function (x) { return (x | 0) === x; })(parseFloat(value))
+}
