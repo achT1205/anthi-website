@@ -6,11 +6,11 @@
       </v-list-item-avatar>
       <v-list-item-content>
         <div class="pub-authors">
-          {{ publication.authors }}
-          <span class="pub-year"> {{ publication.year }} </span>
+          <span v-html="publication.authors"></span>
+          <span class="pub-year" v-html="publication.year"> </span>
         </div>
-        <div class="pub-title">{{ publication.title }}</div>
-        <div class="pub-venue">{{ publication.venue }}</div>
+        <div class="pub-title" v-html="publication.title"></div>
+        <div class="pub-venue" v-html="publication.venue"></div>
         <div class="pub-icons">
           <v-row align="center" justify="start" class="ml-1 mt-0">
             <v-tooltip bottom content-class="pub-icon-tooltip">
@@ -173,6 +173,11 @@ export default {
 </script>
 
 <style lang="scss"  scoped>
+.matched {
+  background-color: rgb(196, 141, 59);
+  color: #ffff;
+}
+
 .pub-icon-tooltip {
   color: $darkenBrown;
   background-color: #fafafa;

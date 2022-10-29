@@ -1,22 +1,18 @@
 <template>
   <div class="page search">
-
     <div class="publication-text">
-    All my publication material is available to download. 
-    Material can include the pdf of the article, video previews, bibtex,
-    analysis scripts, data,  experiment stimuli, presentation slides and live video when applicable. 
-    Participant data from experiments are anonymized. 
-    Interview transcripts are not available due to data privacy protection.</div>
+      All my publication material is available to download. Material can include
+      the pdf of the article, video previews, bibtex, analysis scripts, data,
+      experiment stimuli, presentation slides and live video when applicable.
+      Participant data from experiments are anonymized. Interview transcripts
+      are not available due to data privacy protection.
+    </div>
 
     <h2 class="custom-title">Selected Publications</h2>
 
-  
-
     <div class="pub-all-list">
       <publication-card
-        v-for="publication in publications.filter(
-          (p) => p.is_a_selected_publication === 1
-        )"
+        v-for="publication in toppublications"
         :key="'_' + publication.paper_id"
         :publication="publication"
       />
@@ -72,6 +68,7 @@ export default {
       search: null,
       filteredPublications: [],
       fab: false,
+      toppublications: [],
     };
   },
   components: { PublicationCard },
@@ -79,23 +76,55 @@ export default {
     ...mapGetters(["publications"]),
   },
   mounted() {
-    this.$vuetify.goTo(0);
     this.filteredPublications = [...this.publications];
+    this.toppublications = this.filteredPublications.filter(
+      (p) => p.is_a_selected_publication === 1
+    );
+    this.$vuetify.goTo(0);
   },
 
   watch: {
     publications(val, old) {
       if (val && val !== old) {
-        this.filteredPublications = [...this.publications];
+        this.filteredPublications = [...val];
+        this.toppublications = this.filteredPublications.filter(
+          (p) => p.is_a_selected_publication === 1
+        );
       }
     },
     search(val, old) {
       if (val && val !== old) {
-        this.filteredPublications = this.publications.filter((p) =>
-          p.gsx$bibtex.$t.toLowerCase().includes(val.toLowerCase())
+        let copy = [...this.publications];
+
+        copy = JSON.parse(JSON.stringify(copy));
+        this.filteredPublications = copy.filter(
+          (_) =>
+            _.title.toLowerCase().includes(val.toLowerCase()) ||
+            _.venue.toLowerCase().includes(val.toLowerCase()) ||
+            _.authors.toLowerCase().includes(val.toLowerCase()) ||
+            _.year.toString().includes(val.toLowerCase())
         );
+        if (this.filteredPublications) {
+          this.filteredPublications.forEach((_) => {
+            var regEx = new RegExp(this.search, "ig");
+            _.title = _.title.replaceAll(
+              regEx,
+              `<span style="background-color: rgb(196, 141, 59); color: #ffff;">${this.search}</span>`
+            );
+            _.venue = _.venue.replaceAll(
+              regEx,
+              `<span style="background-color: rgb(196, 141, 59); color: #ffff;">${this.search}</span>`
+            );
+            _.year = _.year
+              .toString()
+              .replaceAll(
+                regEx,
+                `<span style="background-color: rgb(196, 141, 59); color: #ffff;">${this.search}</span>`
+              );
+          });
+        }
       } else {
-        this.filteredPublications = this.publications;
+        this.filteredPublications = [...this.publications];
       }
     },
   },
@@ -126,12 +155,12 @@ export default {
   margin-left: 25px;
 }
 
-.publication-text{
+.publication-text {
   font-weight: 300;
   font-size: 17px;
   padding-left: 50px;
-  padding-top:10px;
-  padding-bottom:20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 </style>
 

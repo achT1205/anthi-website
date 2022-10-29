@@ -26,6 +26,7 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
 import Menu from "@/components/menu.vue";
 import Sidebar from "@/components/sidebar.vue";
 export default {
