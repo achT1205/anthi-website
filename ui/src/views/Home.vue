@@ -24,7 +24,7 @@
         <div>
           <v-card-text class="home">
             <div>
-              I am an Assistant Professor of Computer Science at
+              I am a Tenured Assistant Professor of Computer Science at
               <a
                 class="discrete-link"
                 href="https://www.uu.nl/staff/EDimara"
@@ -88,6 +88,12 @@
         </v-avatar>
         <div>
           <v-card-text class="home">
+            <div>
+              <span class="mr-3">2023</span> Tenured Assistant Professor at
+              <a href="https://www.uu.nl/staff/EDimara" target="_blank">
+                Utrecht University.</a
+              >
+            </div>
             <div>
               <span class="mr-3">2021</span> Assistant Professor at
               <a href="https://www.uu.nl/staff/EDimara" target="_blank">
